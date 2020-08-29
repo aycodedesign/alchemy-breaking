@@ -3,7 +3,7 @@
 #banner {
   /* styles the video */
   #aba-video {
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     min-height: 100%;
@@ -69,7 +69,7 @@
       width: auto;
 
       > :first-child {
-        width: 50%;
+        width: 25%;
 
         &:after {
           max-width: 100%;
@@ -78,6 +78,8 @@
     }
 
     .content {
+      width: 50%;
+      border: 1px red solid;
       @include vendor("display", "flex");
       @include vendor("align-items", "center");
       margin: 0 0 _size(element-margin) 0;
@@ -114,10 +116,12 @@
       flex-direction: column;
       flex-grow: 0;
       flex-shrink: 0;
-      width: 40%;
+      // width: 40%;
+      width: 100%;
       position: absolute;
       right: 0;
       border: 1px red solid;
+      background-color: _palette(fg);
     }
   }
 

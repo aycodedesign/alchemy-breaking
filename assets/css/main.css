@@ -973,7 +973,8 @@ hr {
             padding-top: 2.5em; } }
 
 /* Section/Article */
-section.special, article.special {
+section.special,
+article.special {
   text-align: center; }
 
 header.major {
@@ -986,7 +987,7 @@ header.major {
     margin-bottom: 0;
     width: calc(100% + 0.5em); }
     header.major > :first-child:after {
-      content: '';
+      content: "";
       background-color: #ffffff;
       display: block;
       height: 2px;
@@ -1262,9 +1263,9 @@ a.icon.alt:before {
   -ms-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out; }
 a.icon.alt:hover:before {
-  background-color: #6fc3df; }
+  background-color: #252525; }
 a.icon.alt:active:before {
-  background-color: #37a6cb; }
+  background-color: black; }
 
 /* Image */
 .image {
@@ -1387,7 +1388,7 @@ ul.actions {
 ul.icons {
   cursor: default;
   list-style: none;
-  padding-left: 0; }
+  padding: 2em 0 0 0; }
   ul.icons li {
     display: inline-block;
     padding: 0 1em 0 0; }
@@ -1749,13 +1750,13 @@ button,
     .tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
       width: 60%; }
     .tiles article:nth-child(6n - 5):before {
-      background-color: #6fc3df; }
+      background-color: #252525; }
     .tiles article:nth-child(6n - 4):before {
-      background-color: #8d82c4; }
+      background-color: #f3f3f3; }
     .tiles article:nth-child(6n - 3):before {
-      background-color: #ec8d81; }
+      background-color: #797979; }
     .tiles article:nth-child(6n - 2):before {
-      background-color: #e7b788; }
+      background-color: #606060; }
     .tiles article:nth-child(6n - 1):before {
       background-color: #8ea9e8; }
     .tiles article:nth-child(6n):before {
@@ -1926,10 +1927,10 @@ button,
   box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
   cursor: default;
   font-weight: 600;
-  height: 5em;
+  height: 4em;
   left: 0;
   letter-spacing: 0.25em;
-  line-height: 5em;
+  line-height: 4em;
   margin: 0;
   position: fixed;
   text-transform: uppercase;
@@ -1941,11 +1942,11 @@ button,
     display: inline-block;
     font-size: 0.8em;
     height: inherit;
-    max-width: 7%;
+    max-width: 10%;
     width: auto;
     line-height: inherit;
-    padding: 0.5em 1.5em;
-    margin: 0.25em 1.5em; }
+    padding: 0;
+    margin: 1em 1.5em; }
     #header .logo strong {
       -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
       -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -2039,13 +2040,13 @@ button,
     box-shadow: none;
     position: absolute; }
     #header.alt.style1 .logo strong {
-      color: #6fc3df; }
+      color: #252525; }
     #header.alt.style2 .logo strong {
-      color: #8d82c4; }
+      color: #f3f3f3; }
     #header.alt.style3 .logo strong {
-      color: #ec8d81; }
+      color: #797979; }
     #header.alt.style4 .logo strong {
-      color: #e7b788; }
+      color: #606060; }
     #header.alt.style5 .logo strong {
       color: #8ea9e8; }
     #header.alt.style6 .logo strong {
@@ -2121,7 +2122,7 @@ button,
   position: relative;
   top: -3.25em; }
   #banner #aba-video {
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     min-height: 100%;
@@ -2161,10 +2162,12 @@ button,
     #banner > .inner header {
       width: auto; }
       #banner > .inner header > :first-child {
-        width: 50%; }
+        width: 25%; }
         #banner > .inner header > :first-child:after {
           max-width: 100%; }
     #banner > .inner .content {
+      width: 50%;
+      border: 1px red solid;
       display: -moz-flex;
       display: -webkit-flex;
       display: -ms-flex;
@@ -2195,18 +2198,19 @@ button,
       flex-direction: column;
       flex-grow: 0;
       flex-shrink: 0;
-      width: 40%;
+      width: 100%;
       position: absolute;
       right: 0;
-      border: 1px red solid; }
+      border: 1px red solid;
+      background-color: #ffffff; }
   #banner.style1:after {
-    background-color: #6fc3df; }
+    background-color: #252525; }
   #banner.style2:after {
-    background-color: #8d82c4; }
+    background-color: #f3f3f3; }
   #banner.style3:after {
-    background-color: #ec8d81; }
+    background-color: #797979; }
   #banner.style4:after {
-    background-color: #e7b788; }
+    background-color: #606060; }
   #banner.style5:after {
     background-color: #8ea9e8; }
   #banner.style6:after {
