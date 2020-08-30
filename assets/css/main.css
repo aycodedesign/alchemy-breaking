@@ -2196,7 +2196,6 @@ button,
           max-width: 100%; }
     #banner > .inner .content {
       width: 50%;
-      border: 1px red solid;
       display: -moz-flex;
       display: -webkit-flex;
       display: -ms-flex;
