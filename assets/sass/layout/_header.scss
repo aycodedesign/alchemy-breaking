@@ -13,7 +13,7 @@
 
 #header {
   @include vendor("display", "flex");
-  background-color: _palette(fg-bold);
+  background-color: _palette(highlight);
   box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
   cursor: default;
   font-weight: _font(weight-bold);
@@ -54,18 +54,6 @@
       line-height: 1.65em;
       margin-right: 0.325em;
       padding: 0 0.125em 0 (_font(letter-spacing-alt) + 0.125em);
-    }
-
-    &:hover {
-      strong {
-        background-color: _palette(highlight);
-      }
-    }
-
-    &:active {
-      strong {
-        background-color: desaturate(darken(_palette(highlight), 15), 5);
-      }
     }
   }
 
@@ -271,9 +259,38 @@
   }
 
   @include breakpoint("<=xsmall") {
+    // .logo {
+    //   span {
+    //     display: none;
+    //   }
+    // }
+
     .logo {
-      span {
-        display: none;
+      border: 0;
+      display: inline-block;
+      font-size: 0.8em;
+      height: inherit;
+      max-width: 30%;
+      width: auto;
+      line-height: inherit;
+      padding: 0;
+      // padding: 0.5em 1.5em;
+      margin: 0.5em 1.5em;
+
+      strong {
+        @include vendor(
+          "transition",
+          (
+            "background-color #{_duration(transition)} ease-in-out",
+            "color #{_duration(transition)} ease-in-out"
+          )
+        );
+        background-color: _palette(fg-bold);
+        color: _palette(bg);
+        display: inline-block;
+        line-height: 1.65em;
+        margin-right: 0.325em;
+        padding: 0 0.125em 0 (_font(letter-spacing-alt) + 0.125em);
       }
     }
 

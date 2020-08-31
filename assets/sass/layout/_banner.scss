@@ -5,9 +5,36 @@
   #aba-video {
     position: absolute;
     left: 0;
-    bottom: 0;
-    min-height: 100%;
-    min-width: 50%;
+    bottom: 0em;
+    // top: 0;
+    min-height: 60%;
+    min-width: auto;
+    z-index: 0;
+  }
+
+  > .split {
+    padding: 0;
+
+    > * {
+      @include padding(3em, 0, (0, 0, 0, 3em));
+      position: relative;
+
+      &:before {
+        border-top: solid 1px _palette(border);
+        content: "";
+        display: block;
+        margin-left: -3em;
+        position: absolute;
+        top: 0;
+        width: calc(100vw + 3em);
+      }
+    }
+
+    > :first-child {
+      &:before {
+        display: none;
+      }
+    }
   }
 
   @include vendor("align-items", "center");
@@ -104,7 +131,7 @@
   &.major {
     height: 90vh;
     min-height: 40em;
-    max-height: 70em;
+    // max-height: 70em;
 
     &.alt {
       opacity: 0.75;
@@ -203,6 +230,16 @@
 
   @include breakpoint("<=xsmall") {
     @include padding(4em, 0, (2em, 0, 0, 0));
+
+    #aba-video {
+      position: absolute;
+      left: 0;
+      // bottom: 0em;
+      // top: 0;
+      min-height: auto;
+      max-width: 100%;
+      z-index: 0;
+    }
 
     > .inner {
       .content {
