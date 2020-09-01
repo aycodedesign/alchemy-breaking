@@ -7,7 +7,7 @@
     right: 0;
     top: 0;
     // height: auto !important;
-    height: 80vh;
+    height: 90vh;
     width: 60% !important;
     z-index: 0;
     display: block;
@@ -132,8 +132,8 @@
 
   &.major {
     height: 90vh;
-    min-height: 40em;
-    max-height: 70em;
+    // min-height: 40em;
+    max-height: 90vh;
 
     &.alt {
       opacity: 0.75;
@@ -145,7 +145,7 @@
       flex-grow: 0;
       flex-shrink: 0;
       width: 40% !important;
-      height: 90vh !important;
+      // height: 40vh !important;
       position: absolute;
       // bottom: 0;
       top: 0;
@@ -154,7 +154,7 @@
       section {
         text-align: center;
         padding: 5em 6em 3em 6em;
-        height: auto;
+        height: 45vh;
 
         &.logo {
           background-color: _palette(yellow1);
@@ -164,13 +164,17 @@
         }
 
         &.style1 {
-          background-color: _palette(accent1);
-          color: _palette(bg-alt);
+          background-color: _palette(bg-alt);
+          color: _palette(fg);
+          outline: 3px _palette(border-bg) solid;
+          outline-offset: -2px;
         }
 
         &.style2 {
           background-color: _palette(accent3);
           color: _palette(bg-alt);
+          outline: 3px _palette(border-bg) solid;
+          outline-offset: -2px;
         }
       }
     }
