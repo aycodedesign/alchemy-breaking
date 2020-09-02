@@ -13,7 +13,7 @@
 
 #header {
   @include vendor("display", "flex");
-  background-color: _palette(highlight);
+  background-color: _palette(yellow1);
   box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
   cursor: default;
   font-weight: _font(weight-bold);
@@ -33,12 +33,12 @@
     display: inline-block;
     font-size: 0.8em;
     height: inherit;
-    max-width: 10%;
+    max-width: 15%;
     width: auto;
     line-height: inherit;
-    padding: 0;
-    // padding: 0.5em 1.5em;
-    margin: 1em 1.5em;
+    // padding: 0;
+    padding: 0.5em 2em;
+    margin: 1em 1em;
 
     strong {
       @include vendor(

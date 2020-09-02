@@ -135,6 +135,22 @@
     // min-height: 40em;
     max-height: 90vh;
 
+    .banner-logo {
+      position: relative;
+      text-align: center;
+      color: white;
+      background-color: transparentize(_palette(bg), 0.9);
+      z-index: 0;
+      border: 1px solid red;
+
+      .centered {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+    }
+
     &.alt {
       opacity: 0.75;
     }
@@ -164,16 +180,16 @@
         }
 
         &.style1 {
-          background-color: _palette(bg-alt);
+          background-color: _palette(accent2);
           color: _palette(fg);
-          outline: 3px _palette(border-bg) solid;
+          outline: 3px _palette(bg) solid;
           outline-offset: -2px;
         }
 
         &.style2 {
-          background-color: _palette(accent3);
-          color: _palette(bg-alt);
-          outline: 3px _palette(border-bg) solid;
+          background-color: _palette(accent4);
+          color: _palette(fg);
+          outline: 3px _palette(bg) solid;
           outline-offset: -2px;
         }
       }
@@ -251,11 +267,11 @@
     }
 
     .items {
-      display: block;
-      // display: flex;
-      // flex-direction: column;
-      // flex-grow: 0;
-      // flex-shrink: 0;
+      // display: block;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 0;
+      flex-shrink: 0;
       // width: 100% !important;
       // height: 100% !important;
       max-height: 70vh !important;
@@ -264,7 +280,6 @@
       bottom: 0;
       // top: 0;
       // left: 0;
-      border: 1px red solid;
 
       section {
         text-align: center;

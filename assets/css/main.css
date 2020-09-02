@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap");
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -89,7 +89,7 @@ select,
 textarea {
   color: #ffffff;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 17pt;
+  font-size: 16pt;
   font-weight: 300;
   letter-spacing: 0.025em;
   line-height: 1.65; }
@@ -126,9 +126,9 @@ a {
   text-decoration: none; }
   a:hover {
     border-bottom-color: transparent;
-    color: #f2e205 !important; }
+    color: #272727 !important; }
   a:active {
-    color: #a39808 !important; }
+    color: #010101 !important; }
 
 strong,
 b {
@@ -1523,8 +1523,8 @@ button,
   background-color: transparent;
   border: 0;
   border-radius: 0;
-  box-shadow: inset 0 0 0 2px #181818;
-  color: #181818;
+  box-shadow: inset 0 0 0 2px #ffffff;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   font-size: 0.8em;
@@ -1546,8 +1546,8 @@ button,
   button:active,
   .button:hover,
   .button:active {
-    box-shadow: inset 0 0 0 2px #ffffff;
-    color: #ffffff; }
+    box-shadow: inset 0 0 0 2px #f2cb05;
+    background-color: #f2cb05; }
   input[type="submit"]:active,
   input[type="reset"]:active,
   input[type="button"]:active,
@@ -1624,7 +1624,7 @@ button,
     input[type="button"].next:after,
     button.next:after,
     .button.next:after {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23181818%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");
       opacity: 0;
       z-index: 1; }
     input[type="submit"].next:hover:after, input[type="submit"].next:active:after,
@@ -1987,7 +1987,7 @@ button,
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  background-color: #f2e205;
+  background-color: #f2cb05;
   box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
   cursor: default;
   font-weight: 600;
@@ -2006,11 +2006,11 @@ button,
     display: inline-block;
     font-size: 0.8em;
     height: inherit;
-    max-width: 10%;
+    max-width: 15%;
     width: auto;
     line-height: inherit;
-    padding: 0;
-    margin: 1em 1.5em; }
+    padding: 0.5em 2em;
+    margin: 1em 1em; }
     #header .logo strong {
       -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
       -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -2284,6 +2284,18 @@ button,
   #banner.major {
     height: 90vh;
     max-height: 90vh; }
+    #banner.major .banner-logo {
+      position: relative;
+      text-align: center;
+      color: white;
+      background-color: rgba(24, 24, 24, 0.1);
+      z-index: 0;
+      border: 1px solid red; }
+      #banner.major .banner-logo .centered {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1; }
     #banner.major.alt {
       opacity: 0.75; }
     #banner.major .items {
@@ -2304,14 +2316,14 @@ button,
           #banner.major .items section.logo img {
             max-width: 25%; }
         #banner.major .items section.style1 {
-          background-color: #272727;
+          background-color: #0c0b0b;
           color: #ffffff;
-          outline: 3px rgba(212, 212, 255, 0.035) solid;
+          outline: 3px #181818 solid;
           outline-offset: -2px; }
         #banner.major .items section.style2 {
-          background-color: #bdbdbd;
-          color: #272727;
-          outline: 3px rgba(212, 212, 255, 0.035) solid;
+          background-color: #202020;
+          color: #ffffff;
+          outline: 3px #181818 solid;
           outline-offset: -2px; }
   body.is-preload #banner:after {
     opacity: 1; }
@@ -2359,11 +2371,13 @@ button,
         top: 0;
         display: block; }
       #banner .items {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 0;
+        flex-shrink: 0;
         max-height: 70vh !important;
         position: relative;
-        bottom: 0;
-        border: 1px red solid; }
+        bottom: 0; }
         #banner .items section {
           text-align: center;
           padding: 5em 6em 3em 6em;
@@ -2526,7 +2540,7 @@ button,
   -ms-justify-content: center;
   justify-content: center;
   pointer-events: none;
-  background: rgba(242, 226, 5, 0.7);
+  background: rgba(242, 203, 5, 0.7);
   box-shadow: none;
   height: 100%;
   left: 0;
