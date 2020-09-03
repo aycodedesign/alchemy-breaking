@@ -36,7 +36,6 @@
     max-width: 15%;
     width: auto;
     line-height: inherit;
-    // padding: 0;
     padding: 0.5em 2em;
     margin: 1em 1em;
 
@@ -270,12 +269,11 @@
       display: inline-block;
       font-size: 0.8em;
       height: inherit;
-      max-width: 30%;
+      max-width: 35%;
       width: auto;
       line-height: inherit;
       padding: 0;
-      // padding: 0.5em 1.5em;
-      margin: 0.5em 1.5em;
+      margin: 1em 1em;
 
       strong {
         @include vendor(
