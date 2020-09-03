@@ -2,26 +2,58 @@
 
 <html>
   <head>
-    <title>Landing - Forty by HTML5 UP</title>
+    <title>Alchemy Breaking Academy</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./image/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./image/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./image/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./image/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./image/favicon/safari-pinned-tab.svg"
+      color="#494949"
+    />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#f2e205" />
+
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
   </head>
+
   <body class="is-preload">
     <!-- Wrapper -->
     <div id="wrapper">
       <!-- Header -->
       <!-- Note: The "styleN" class below should match that of the banner element. -->
-      <header id="header" class="alt style2">
-        <a href="index.html" class="logo"
-          ><strong>Forty</strong> <span>by HTML5 UP</span></a
-        >
+      <header id="header" class="alt">
+        <a href="index.html">
+          <img
+            class="logo"
+            src="./image/aba-text.png"
+            alt="ABA logo horizontal"
+          />
+        </a>
         <nav>
           <a href="#menu">Menu</a>
         </nav>
@@ -30,14 +62,35 @@
       <!-- Menu -->
       <nav id="menu">
         <ul class="links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="landing.html">Landing</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./schedule.html">Class Schedule</a></li>
+          <li><a href="./staff.html">Meet the Staff</a></li>
+          <li><a href="./merchandise.html">ABA Merchandise</a></li>
+          <li><a href=""></a></li>
+          <!-- <li><a href="landing.html">Landing</a></li>
           <li><a href="generic.html">Generic</a></li>
-          <li><a href="elements.html">Elements</a></li>
+          <li><a href="elements.html">Elements</a></li> -->
         </ul>
         <ul class="actions stacked">
-          <li><a href="#" class="button primary fit">Get Started</a></li>
           <li><a href="#" class="button fit">Log In</a></li>
+          <li>
+            <a href="#" class="button fit">After Skool Program</a>
+          </li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon brands alt fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="./image/after skool sessions.pdf"
+              target="_blank"
+              class="icon brands alt fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
         </ul>
       </nav>
 
@@ -46,10 +99,10 @@
       <section id="banner" class="style2">
         <div class="inner">
           <span class="image">
-            <img src="images/pic07.jpg" alt="" />
+            <img src="./image/staff.png" alt="meet the staff" />
           </span>
           <header class="major">
-            <h1>Landing</h1>
+            <h1><em>MEET THE STAFF</em></h1>
           </header>
           <div class="content">
             <p>
@@ -63,7 +116,7 @@
       <!-- Main -->
       <div id="main">
         <!-- One -->
-        <section id="one">
+        <!-- <section id="one">
           <div class="inner">
             <header class="major">
               <h2>Sed amet aliquam</h2>
@@ -78,22 +131,23 @@
               ligula tate urna.
             </p>
           </div>
-        </section>
+        </section> -->
 
         <!-- Two -->
         <section id="two" class="spotlights">
           <section>
             <a href="generic.html" class="image">
               <img
-                src="images/pic08.jpg"
-                alt=""
+                src="./image/staff/etienne-carreira_square.png"
+                alt="ATN"
                 data-position="center center"
               />
             </a>
             <div class="content">
               <div class="inner">
                 <header class="major">
-                  <h3>Orci maecenas</h3>
+                  <h2><em>ETIENNE CARREIRA</em></h2>
+                  <h2>"ATN"</h2>
                 </header>
                 <p>
                   Nullam et orci eu lorem consequat tincidunt vivamus et
@@ -103,19 +157,24 @@
                   consequat tincidunt. Vivamus et sagittis tempus.
                 </p>
                 <ul class="actions">
-                  <li><a href="generic.html" class="button">Learn more</a></li>
+                  <li><a href="generic.html" class="button">ATN's bio</a></li>
                 </ul>
               </div>
             </div>
           </section>
           <section>
             <a href="generic.html" class="image">
-              <img src="images/pic09.jpg" alt="" data-position="top center" />
+              <img
+                src="./image/staff/guillaume-carreira_square.png"
+                alt="Geom"
+                data-position="top center"
+              />
             </a>
             <div class="content">
               <div class="inner">
                 <header class="major">
-                  <h3>Rhoncus magna</h3>
+                  <h2><em>GUILLAUME CARREIRA</em></h2>
+                  <h2>"GEOM"</h2>
                 </header>
                 <p>
                   Nullam et orci eu lorem consequat tincidunt vivamus et
@@ -125,19 +184,23 @@
                   consequat tincidunt. Vivamus et sagittis tempus.
                 </p>
                 <ul class="actions">
-                  <li><a href="generic.html" class="button">Learn more</a></li>
+                  <li><a href="generic.html" class="button">Geom's bio</a></li>
                 </ul>
               </div>
             </div>
           </section>
           <section>
             <a href="generic.html" class="image">
-              <img src="images/pic10.jpg" alt="" data-position="25% 25%" />
+              <img
+                src="./image/staff/kareem-gwinn_square.png"
+                alt=""
+                data-position="25% 25%"
+              />
             </a>
             <div class="content">
               <div class="inner">
                 <header class="major">
-                  <h3>Sed nunc ligula</h3>
+                  <h2><em>KAREEM GWINN</em></h2>
                 </header>
                 <p>
                   Nullam et orci eu lorem consequat tincidunt vivamus et
@@ -147,7 +210,9 @@
                   consequat tincidunt. Vivamus et sagittis tempus.
                 </p>
                 <ul class="actions">
-                  <li><a href="generic.html" class="button">Learn more</a></li>
+                  <li>
+                    <a href="generic.html" class="button">Kareem's bio</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -199,7 +264,7 @@
               </div>
               <ul class="actions">
                 <li>
-                  <input type="submit" value="Send Message" class="primary" />
+                  <input type="submit" value="Send Message" class="button" />
                 </li>
                 <li><input type="reset" value="Clear" /></li>
               </ul>
@@ -210,14 +275,14 @@
               <div class="contact-method">
                 <span class="icon solid alt fa-envelope"></span>
                 <h3>Email</h3>
-                <a href="#">information@untitled.tld</a>
+                <a href="#">email@email.com</a>
               </div>
             </section>
             <section>
               <div class="contact-method">
                 <span class="icon solid alt fa-phone"></span>
                 <h3>Phone</h3>
-                <span>(000) 000-0000 x12387</span>
+                <span>555.555.5555</span>
               </div>
             </section>
             <section>
@@ -226,7 +291,7 @@
                 <h3>Address</h3>
                 <span
                   >1234 Somewhere Road #5432<br />
-                  Nashville, TN 00000<br />
+                  Las Vegas NV 00000<br />
                   United States of America</span
                 >
               </div>
@@ -239,22 +304,29 @@
       <footer id="footer">
         <div class="inner">
           <ul class="icons">
-            <li>
+            <!-- <li>
               <a href="#" class="icon brands alt fa-twitter"
                 ><span class="label">Twitter</span></a
               >
-            </li>
+            </li> -->
             <li>
-              <a href="#" class="icon brands alt fa-facebook-f"
-                ><span class="label">Facebook</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="icon brands alt fa-instagram"
+              <a
+                href="https://www.instagram.com/alchemybreaking/"
+                target="_blank"
+                class="icon brands alt fa-instagram"
                 ><span class="label">Instagram</span></a
               >
             </li>
             <li>
+              <a
+                href="https://www.facebook.com/alchemybreaking"
+                target="_blank"
+                class="icon brands alt fa-facebook-f"
+                ><span class="label">Facebook</span></a
+              >
+            </li>
+
+            <!-- <li>
               <a href="#" class="icon brands alt fa-github"
                 ><span class="label">GitHub</span></a
               >
@@ -263,11 +335,11 @@
               <a href="#" class="icon brands alt fa-linkedin-in"
                 ><span class="label">LinkedIn</span></a
               >
-            </li>
+            </li> -->
           </ul>
           <ul class="copyright">
-            <li>&copy; Untitled</li>
-            <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+            <li>&copy; 2020 Alchemy Breaking Academy</li>
+            <li>Designed by <a href="aycode.design">AYcode+design</a></li>
           </ul>
         </div>
       </footer>

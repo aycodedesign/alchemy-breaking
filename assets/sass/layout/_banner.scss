@@ -98,7 +98,8 @@
       width: auto;
 
       > :first-child {
-        width: 25%;
+        width: 50%;
+        color: _palette(yellow1);
 
         &:after {
           max-width: 100%;

@@ -21,16 +21,17 @@ $size: (
 // Font.
 $font: (
   family: (
-    "Source Sans Pro",
-    Helvetica,
+    "Poppins",
+    Source Sans Pro,
     sans-serif,
   ),
   family-fixed: (
     "Courier New",
     monospace,
   ),
-  weight: 300,
+  weight: 400,
   weight-bold: 600,
+  weight-black: 900,
   letter-spacing: 0.025em,
   letter-spacing-alt: 0.25em,
 );
