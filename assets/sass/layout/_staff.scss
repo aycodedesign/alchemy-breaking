@@ -1,0 +1,70 @@
+/* Staff Popup */
+
+#staff {
+  padding: 3em;
+  display: inline;
+
+  .card {
+    box-shadow: 0 4px 8px 0 _palette(bg-alt);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 1em;
+    // margin: 0.5em;
+
+    h3 {
+      font-size: 1.35em;
+
+      &:hover {
+        color: _palette(fg) !important;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 22px;
+      color: black;
+      padding: 0.5em 0.5em;
+    }
+  }
+
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+
+  // button:hover,
+  // a:hover {
+  //   background-color: _palette(yellow1);
+  // }
+
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    // width: 100%;
+    padding: 0 0.5em;
+    margin: auto;
+  }
+
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {
+    // margin: 0 -5px;
+    margin: auto;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+}

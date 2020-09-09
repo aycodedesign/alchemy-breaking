@@ -1272,7 +1272,7 @@ input[type="radio"] + label:before {
   .icon.solid:before {
     font-weight: 900; }
   .icon.brands:before {
-    font-family: 'Font Awesome 5 Brands'; }
+    font-family: "Font Awesome 5 Brands"; }
   .icon.alt:before {
     background-color: #ffffff;
     border-radius: 100%;
@@ -1289,7 +1289,7 @@ a.icon.alt:before {
   -ms-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out; }
 a.icon.alt:hover:before {
-  background-color: #f6f6f6; }
+  background-color: #f2cb05; }
 a.icon.alt:active:before {
   background-color: #d0d0d0; }
 
@@ -1884,7 +1884,7 @@ button,
       border-radius: 0;
       display: block;
       position: relative;
-      width: 30%; }
+      width: 50%; }
       .spotlights > section > .image img {
         border-radius: 0;
         display: block;
@@ -1917,7 +1917,7 @@ button,
       -ms-align-items: center;
       align-items: center;
       padding: 2em 3em 0.1em 3em ;
-      width: 70%; }
+      width: 50%; }
       .spotlights > section > .content > .inner {
         margin: 0 auto;
         max-width: 100%;
@@ -2664,5 +2664,47 @@ body.is-menu-visible #menu {
     transform: none;
     opacity: 1;
     visibility: visible; }
+
+/* Staff Popup */
+#staff {
+  padding: 3em;
+  display: inline;
+  /* Float four columns side by side */
+  /* Remove extra left and right margins, due to padding in columns */
+  /* Clear floats after the columns */
+  /* Responsive columns - one column layout (vertical) on small screens */ }
+  #staff .card {
+    box-shadow: 0 4px 8px 0 #272727;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 1em; }
+    #staff .card h3 {
+      font-size: 1.35em; }
+      #staff .card h3:hover {
+        color: #ffffff !important; }
+    #staff .card a {
+      text-decoration: none;
+      font-size: 22px;
+      color: black;
+      padding: 0.5em 0.5em; }
+  #staff .title {
+    color: grey;
+    font-size: 18px; }
+  #staff .column {
+    float: left;
+    padding: 0 0.5em;
+    margin: auto; }
+  #staff .row {
+    margin: auto; }
+  #staff .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (max-width: 600px) {
+    #staff .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px; } }
 
 /*# sourceMappingURL=main.css.map */
