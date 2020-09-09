@@ -1,7 +1,7 @@
 /* Staff Popup */
 
 #staff {
-  padding: 3em;
+  padding: 3em 3em 6em 3em;
   display: inline;
 
   .card {
@@ -10,7 +10,13 @@
     margin: auto;
     text-align: center;
     padding-bottom: 1em;
-    // margin: 0.5em;
+    margin: 1em 0;
+    min-height: 31em;
+
+    &:hover {
+      // transform: rotateY(180deg);
+      // background-color: _palette(yellow1);
+    }
 
     h3 {
       font-size: 1.35em;
@@ -32,11 +38,6 @@
     color: grey;
     font-size: 18px;
   }
-
-  // button:hover,
-  // a:hover {
-  //   background-color: _palette(yellow1);
-  // }
 
   /* Float four columns side by side */
   .column {
