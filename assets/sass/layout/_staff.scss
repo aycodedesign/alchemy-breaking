@@ -60,12 +60,51 @@
     clear: both;
   }
 
-  /* Responsive columns - one column layout (vertical) on small screens */
-  @media screen and (max-width: 600px) {
-    .column {
+  // @media screen and (max-width: 600px) {
+  //   .column {
+  //     width: 100%;
+  //     display: block;
+  //     margin-bottom: 20px;
+  //   }
+  // }
+
+  @include breakpoint("<=small") {
+    @include padding(3em, 0);
+    width: calc(100% - 3em);
+  }
+
+  @include breakpoint("<=xsmall") {
+    @include padding(3em, 1em);
+
+    .card {
+      box-shadow: 0 4px 8px 0 _palette(bg-alt);
       width: 100%;
-      display: block;
-      margin-bottom: 20px;
+      max-width: 100%;
+      margin: auto;
+      text-align: center;
+      padding-bottom: 1em;
+      margin: 1em 0;
+      min-height: 31em;
+
+      h2 {
+        font-size: 2em;
+
+        &:hover {
+          color: _palette(fg) !important;
+        }
+      }
+
+      h3 {
+        font-size: 1.5em;
+        margin: 2em 0;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+        padding: 0.5em 0.5em;
+      }
     }
   }
 }
