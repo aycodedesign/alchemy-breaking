@@ -255,7 +255,7 @@
     /* styles the video */
     #aba-video {
       position: absolute;
-      right: 0;
+      left: 0;
       top: 0;
       height: 60vh;
       width: 100% !important;
@@ -382,9 +382,9 @@
     }
 
     &.major {
-      height: 90vh;
+      height: 150vh;
       // min-height: 40em;
-      max-height: 90vh;
+      // max-height: 90vh;
 
       .banner-logo {
         position: relative;
@@ -407,21 +407,21 @@
       }
 
       .items {
-        display: table;
+        display: block;
         flex-direction: column;
         flex-grow: 0;
         flex-shrink: 0;
         width: 100% !important;
-        // height: 40vh !important;
+        height: 40vh !important;
         position: absolute;
-        // bottom: 0;
-        top: 0;
+        top: 60vh;
         left: 0;
 
         section {
           text-align: center;
           padding: 5em 6em 3em 6em;
-          height: 45vh;
+          // height: 45vh;
+          height: auto;
 
           &.logo {
             background-color: _palette(yellow1);

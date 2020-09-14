@@ -1620,7 +1620,7 @@ button,
     input[type="button"].next:before,
     button.next:before,
     .button.next:before {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E"); }
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23f2cb05%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E"); }
     input[type="submit"].next:after,
     input[type="reset"].next:after,
     input[type="button"].next:after,
@@ -2108,7 +2108,7 @@ button,
     #header.alt.style2 .logo strong {
       color: #0c0b0b; }
     #header.alt.style3 .logo strong {
-      color: #bdbdbd; }
+      color: #333333; }
     #header.alt.style4 .logo strong {
       color: #202020; }
     #header.alt.style5 .logo strong {
@@ -2390,7 +2390,7 @@ button,
       top: -3.25em; }
       #banner #aba-video {
         position: absolute;
-        right: 0;
+        left: 0;
         top: 0;
         height: 60vh;
         width: 100% !important;
@@ -2472,8 +2472,7 @@ button,
             letter-spacing: 0.25em;
             text-transform: uppercase; }
       #banner.major {
-        height: 90vh;
-        max-height: 90vh; }
+        height: 150vh; }
         #banner.major .banner-logo {
           position: relative;
           text-align: center;
@@ -2489,18 +2488,19 @@ button,
         #banner.major.alt {
           opacity: 0.75; }
         #banner.major .items {
-          display: table;
+          display: block;
           flex-direction: column;
           flex-grow: 0;
           flex-shrink: 0;
           width: 100% !important;
+          height: 40vh !important;
           position: absolute;
-          top: 0;
+          top: 60vh;
           left: 0; }
           #banner.major .items section {
             text-align: center;
             padding: 5em 6em 3em 6em;
-            height: 45vh; }
+            height: auto; }
             #banner.major .items section.logo {
               background-color: #f2cb05; }
               #banner.major .items section.logo img {
@@ -2812,8 +2812,6 @@ body.is-menu-visible #menu {
     /* The Close Button */ }
     #staff .card h3 {
       font-size: 1.35em; }
-      #staff .card h3:hover {
-        color: #ffffff !important; }
     #staff .card a {
       text-decoration: none;
       font-size: 22px;
@@ -2892,8 +2890,11 @@ body.is-menu-visible #menu {
   @media screen and (max-width: 480px) {
     #staff {
       padding: 3em 1em 1em 1em ; }
+      #staff .column {
+        float: left;
+        padding: 1em 0;
+        margin: auto; }
       #staff .card {
-        box-shadow: 0 4px 8px 0 #272727;
         width: 100%;
         max-width: 100%;
         margin: auto;
@@ -2901,13 +2902,14 @@ body.is-menu-visible #menu {
         padding-bottom: 1em;
         margin: 1em 0;
         min-height: 31em;
+        background-color: #333333;
         /* The Close Button */ }
         #staff .card .modal-content {
           margin: 15% auto;
           /* 15% from the top and centered */
           padding: 1.5em;
-          border: 1px solid #888;
-          width: 90%;
+          border: 1px solid #f2e205;
+          width: 85%;
           /* Could be more or less, depending on screen size */ }
           #staff .card .modal-content h2 {
             font-size: 2em; }

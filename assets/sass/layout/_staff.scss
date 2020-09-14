@@ -13,17 +13,8 @@
     margin: 1em 0;
     min-height: 31em;
 
-    &:hover {
-      // transform: rotateY(180deg);
-      // background-color: _palette(yellow1);
-    }
-
     h3 {
       font-size: 1.35em;
-
-      &:hover {
-        color: _palette(fg) !important;
-      }
     }
 
     a {
@@ -127,8 +118,14 @@
   @include breakpoint("<=xsmall") {
     @include padding(3em, 1em);
 
+    .column {
+      float: left;
+      padding: 1em 0;
+      margin: auto;
+    }
+
     .card {
-      box-shadow: 0 4px 8px 0 _palette(bg-alt);
+      // box-shadow: 0 4px 8px 0 _palette(bg-alt);
       width: 100%;
       max-width: 100%;
       margin: auto;
@@ -136,12 +133,13 @@
       padding-bottom: 1em;
       margin: 1em 0;
       min-height: 31em;
+      background-color: _palette(accent3);
 
       .modal-content {
         margin: 15% auto; /* 15% from the top and centered */
         padding: 1.5em;
-        border: 1px solid #888;
-        width: 90%; /* Could be more or less, depending on screen size */
+        border: 1px solid _palette(highlight);
+        width: 85%; /* Could be more or less, depending on screen size */
 
         h2 {
           font-size: 2em;
