@@ -2506,7 +2506,6 @@ button,
           flex-grow: 0;
           flex-shrink: 0;
           width: 100% !important;
-          height: 40vh !important;
           position: absolute;
           top: 60vh;
           left: 0; }
