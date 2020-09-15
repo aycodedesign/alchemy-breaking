@@ -187,8 +187,8 @@
         }
 
         &.style2 {
-          background-color: _palette(accent4);
-          color: _palette(fg);
+          background-color: _palette(fg);
+          color: _palette(bg-alt);
           outline: 3px _palette(bg) solid;
           outline-offset: -2px;
         }
@@ -382,7 +382,7 @@
     }
 
     &.major {
-      height: 150vh;
+      height: 160vh;
       // min-height: 40em;
       // max-height: 90vh;
 
@@ -438,9 +438,9 @@
           }
 
           &.style2 {
-            background-color: _palette(accent4);
-            color: _palette(fg);
-            outline: 3px _palette(bg) solid;
+            background-color: _palette(fg);
+            color: _palette(bg-alt);
+            outline: 3px _palette(border-bg) solid;
             outline-offset: -2px;
           }
         }
