@@ -2341,7 +2341,7 @@ button,
         #banner.major .items section.style2 {
           background-color: #ffffff;
           color: #272727;
-          outline: 3px #181818 solid;
+          outline: 3px rgba(212, 212, 255, 0.035) solid;
           outline-offset: -2px; }
   body.is-preload #banner:after {
     opacity: 1; }
@@ -2485,7 +2485,7 @@ button,
             letter-spacing: 0.25em;
             text-transform: uppercase; }
       #banner.major {
-        height: 160vh; }
+        height: 170vh; }
         #banner.major .banner-logo {
           position: relative;
           text-align: center;
