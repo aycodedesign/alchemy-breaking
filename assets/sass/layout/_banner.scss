@@ -337,9 +337,7 @@
         )
       );
       padding: 0 !important;
-      position: relative;
-      top: 120vh;
-      z-index: 10;
+      position: absolute;
 
       .image {
         display: none;
@@ -383,7 +381,7 @@
     }
 
     &.major {
-      height: 170vh;
+      height: 160vh;
       // min-height: 40em;
       // max-height: 90vh;
 
@@ -432,11 +430,11 @@
           }
 
           &.style1 {
-            background-color: _palette(accent2);
+            background-color: _palette(yellow1);
             color: _palette(fg);
             outline: 3px _palette(bg) solid;
             outline-offset: -2px;
-            min-height: 70vh;
+            min-height: 55vh;
           }
 
           &.style2 {
@@ -444,7 +442,7 @@
             color: _palette(bg-alt);
             outline: 3px _palette(border-bg) solid;
             outline-offset: -2px;
-            min-height: 50vh;
+            min-height: 40vh;
           }
         }
       }

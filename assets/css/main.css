@@ -2447,9 +2447,7 @@ button,
         -ms-transition: opacity 1.5s ease, -ms-transform 0.5s ease-out, -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
         transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
         padding: 0 !important;
-        position: relative;
-        top: 120vh;
-        z-index: 10; }
+        position: absolute; }
         #banner > .inner .image {
           display: none; }
         #banner > .inner header {
@@ -2481,7 +2479,7 @@ button,
             letter-spacing: 0.25em;
             text-transform: uppercase; }
       #banner.major {
-        height: 170vh; }
+        height: 160vh; }
         #banner.major .banner-logo {
           position: relative;
           text-align: center;
@@ -2513,17 +2511,17 @@ button,
               #banner.major .items section.logo img {
                 max-width: 25%; }
             #banner.major .items section.style1 {
-              background-color: #0c0b0b;
+              background-color: #f2cb05;
               color: #ffffff;
               outline: 3px #181818 solid;
               outline-offset: -2px;
-              min-height: 70vh; }
+              min-height: 55vh; }
             #banner.major .items section.style2 {
               background-color: #ffffff;
               color: #272727;
               outline: 3px rgba(212, 212, 255, 0.035) solid;
               outline-offset: -2px;
-              min-height: 50vh; }
+              min-height: 40vh; }
       body.is-preload #banner:after {
         opacity: 1; }
       body.is-preload #banner > .inner {
