@@ -1832,8 +1832,6 @@ button,
       background-color: #0c0b0b; }
     .tiles article:nth-child(6n - 1):before {
       background-color: #8ea9e8; }
-    .tiles article:nth-child(6n):before {
-      background-color: #87c5a4; }
   @media screen and (max-width: 1280px) {
     .tiles article {
       padding: 4em 3em 2em 3em ;
@@ -2120,8 +2118,6 @@ button,
       color: #202020; }
     #header.alt.style5 .logo strong {
       color: #8ea9e8; }
-    #header.alt.style6 .logo strong {
-      color: #87c5a4; }
   body.is-preload #header.alt {
     opacity: 0; }
   @media screen and (max-width: 1680px) {
@@ -2678,7 +2674,7 @@ button,
   -ms-justify-content: center;
   justify-content: center;
   pointer-events: none;
-  background: rgba(242, 203, 5, 0.7);
+  background: rgba(255, 199, 0, 0.7);
   box-shadow: none;
   height: 100%;
   left: 0;
@@ -2817,6 +2813,8 @@ body.is-menu-visible #menu {
     /* The Modal (background) */
     /* Modal Content/Box */
     /* The Close Button */ }
+    #staff .card h2 {
+      padding: 0.5em 1em 0 1em; }
     #staff .card h3 {
       font-size: 1.35em; }
     #staff .card a {
