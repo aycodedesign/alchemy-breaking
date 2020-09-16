@@ -105,12 +105,6 @@ textarea {
     select,
     textarea {
       font-size: 12pt; } }
-  @media screen and (max-width: 360px) {
-    body,
-    input,
-    select,
-    textarea {
-      font-size: 11pt; } }
 
 #menu {
   color: #272727; }
@@ -2511,8 +2505,7 @@ button,
           left: 0; }
           #banner.major .items section {
             text-align: center;
-            padding: 5em 6em 3em 6em;
-            height: auto; }
+            padding: 5em 6em 3em 6em; }
             #banner.major .items section.logo {
               background-color: #f2cb05; }
               #banner.major .items section.logo img {
@@ -2521,7 +2514,8 @@ button,
               background-color: #0c0b0b;
               color: #ffffff;
               outline: 3px #181818 solid;
-              outline-offset: -2px; }
+              outline-offset: -2px;
+              min-height: 70vh; }
             #banner.major .items section.style2 {
               background-color: #ffffff;
               color: #272727;

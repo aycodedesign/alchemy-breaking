@@ -19,9 +19,9 @@ textarea {
     font-size: 12pt;
   }
 
-  @include breakpoint("<=xxsmall") {
-    font-size: 11pt;
-  }
+  // @include breakpoint("<=xxsmall") {
+  //   font-size: 11pt;
+  // }
 }
 
 #menu {

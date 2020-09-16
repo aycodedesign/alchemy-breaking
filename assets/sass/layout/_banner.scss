@@ -421,7 +421,7 @@
           text-align: center;
           padding: 5em 6em 3em 6em;
           // height: 45vh;
-          height: auto;
+          // height: auto;
 
           &.logo {
             background-color: _palette(yellow1);
@@ -435,6 +435,7 @@
             color: _palette(fg);
             outline: 3px _palette(bg) solid;
             outline-offset: -2px;
+            min-height: 70vh;
           }
 
           &.style2 {
