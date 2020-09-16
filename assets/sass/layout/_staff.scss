@@ -1,7 +1,7 @@
 /* Staff Popup */
 
 #staff {
-  padding: 3em 3em 6em 3em;
+  // padding: 0 3em 6em 3em;
   display: inline;
 
   .card {
@@ -10,8 +10,9 @@
     margin: auto;
     text-align: center;
     padding-bottom: 1em;
-    margin: 1em 0;
+    margin: 5em 0;
     min-height: 31em;
+    background-color: _palette(bg-alt);
 
     h2 {
       padding: 0.5em 1em 0 1em;
@@ -93,6 +94,7 @@
   .row {
     // margin: 0 -5px;
     margin: auto;
+    background-color: _palette(accent3);
   }
 
   /* Clear floats after the columns */

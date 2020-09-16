@@ -2318,7 +2318,8 @@ button,
       #banner.major .items section {
         text-align: center;
         padding: 5em 6em 3em 6em;
-        height: 45vh; }
+        height: 45vh;
+        width: 100%; }
         #banner.major .items section.logo {
           background-color: #f2cb05; }
           #banner.major .items section.logo img {
@@ -2749,7 +2750,6 @@ button,
     text-align: right;
     text-indent: 8em;
     top: 0;
-    vertical-align: middle;
     white-space: nowrap;
     width: 8em; }
     #menu .close:before, #menu .close:after {
@@ -2796,7 +2796,6 @@ body.is-menu-visible #menu {
 
 /* Staff Popup */
 #staff {
-  padding: 3em 3em 6em 3em;
   display: inline;
   /* Float four columns side by side */
   /* Remove extra left and right margins, due to padding in columns */
@@ -2808,8 +2807,9 @@ body.is-menu-visible #menu {
     margin: auto;
     text-align: center;
     padding-bottom: 1em;
-    margin: 1em 0;
+    margin: 5em 0;
     min-height: 31em;
+    background-color: #272727;
     /* The Modal (background) */
     /* Modal Content/Box */
     /* The Close Button */ }
@@ -2876,7 +2876,8 @@ body.is-menu-visible #menu {
     padding: 0 0.5em;
     margin: auto; }
   #staff .row {
-    margin: auto; }
+    margin: auto;
+    background-color: #333333; }
   #staff .row:after {
     content: "";
     display: table;
