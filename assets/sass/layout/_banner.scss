@@ -443,6 +443,7 @@
             color: _palette(bg-alt);
             outline: 3px _palette(border-bg) solid;
             outline-offset: -2px;
+            min-height: 50vh;
           }
         }
       }

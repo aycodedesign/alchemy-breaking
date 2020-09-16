@@ -2520,7 +2520,8 @@ button,
               background-color: #ffffff;
               color: #272727;
               outline: 3px rgba(212, 212, 255, 0.035) solid;
-              outline-offset: -2px; }
+              outline-offset: -2px;
+              min-height: 50vh; }
       body.is-preload #banner:after {
         opacity: 1; }
       body.is-preload #banner > .inner {
