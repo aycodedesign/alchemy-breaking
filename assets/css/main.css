@@ -2447,6 +2447,8 @@ button,
         -ms-transition: opacity 1.5s ease, -ms-transform 0.5s ease-out, -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
         transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
         padding: 0 !important;
+        position: relative;
+        top: 120vh;
         z-index: 0; }
         #banner > .inner .image {
           display: none; }

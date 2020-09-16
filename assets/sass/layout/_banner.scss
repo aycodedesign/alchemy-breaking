@@ -337,7 +337,8 @@
         )
       );
       padding: 0 !important;
-      // position: relative;
+      position: relative;
+      top: 120vh;
       z-index: 0;
 
       .image {
