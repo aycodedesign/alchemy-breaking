@@ -434,7 +434,7 @@
             color: _palette(fg);
             outline: 3px _palette(bg) solid;
             outline-offset: -2px;
-            min-height: 55vh;
+            min-height: 65vh;
           }
 
           &.style2 {
@@ -442,7 +442,7 @@
             color: _palette(bg-alt);
             outline: 3px _palette(border-bg) solid;
             outline-offset: -2px;
-            min-height: 40vh;
+            min-height: 50vh;
           }
         }
       }
