@@ -2449,7 +2449,7 @@ button,
         padding: 0 !important;
         position: relative;
         top: 120vh;
-        z-index: 0; }
+        z-index: 10; }
         #banner > .inner .image {
           display: none; }
         #banner > .inner header {
