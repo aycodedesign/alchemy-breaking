@@ -2317,7 +2317,6 @@ button,
       left: 0; }
       #banner.major .items section {
         text-align: center;
-        padding: 3em 2em;
         height: 45vh;
         width: 100%; }
         #banner.major .items section.logo {
@@ -2328,12 +2327,14 @@ button,
           background-color: #0c0b0b;
           color: #ffffff;
           outline: 3px #181818 solid;
-          outline-offset: -2px; }
+          outline-offset: -2px;
+          padding: 3em 2em; }
         #banner.major .items section.style2 {
           background-color: #ffffff;
           color: #272727;
           outline: 3px rgba(212, 212, 255, 0.035) solid;
-          outline-offset: -2px; }
+          outline-offset: -2px;
+          padding: 4em 3em; }
   body.is-preload #banner:after {
     opacity: 1; }
   body.is-preload #banner > .inner {

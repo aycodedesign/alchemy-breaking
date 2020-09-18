@@ -169,7 +169,6 @@
 
       section {
         text-align: center;
-        padding: 3em 2em;
         height: 45vh;
         width: 100%;
 
@@ -185,6 +184,7 @@
           color: _palette(fg);
           outline: 3px _palette(bg) solid;
           outline-offset: -2px;
+          padding: 3em 2em;
         }
 
         &.style2 {
@@ -192,6 +192,7 @@
           color: _palette(bg-alt);
           outline: 3px _palette(border-bg) solid;
           outline-offset: -2px;
+          padding: 4em 3em;
         }
       }
     }
