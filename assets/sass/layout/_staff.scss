@@ -4,6 +4,10 @@
   // padding: 0 3em 6em 3em;
   display: inline;
 
+  ///////////////////////////
+
+  ///////////////////////////
+
   .card {
     box-shadow: 0 4px 8px 0 _palette(bg-alt);
     max-width: 300px;
@@ -12,7 +16,7 @@
     padding-bottom: 1em;
     margin: 5em 0;
     min-height: 31em;
-    background-color: _palette(bg-alt);
+    background-color: _palette(border);
 
     h2 {
       padding: 0.5em 1em 0 1em;
@@ -48,7 +52,7 @@
     /* Modal Content/Box */
     .modal-content {
       background-color: transparentize(_palette(bg-alt), 0.15);
-      margin: 15% auto; /* 15% from the top and centered */
+      margin: 5% auto; /* 5% from the top and centered */
       padding: 5em;
       border: 1px solid #888;
       width: 70%; /* Could be more or less, depending on screen size */

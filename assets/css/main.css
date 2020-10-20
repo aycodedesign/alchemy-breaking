@@ -2240,7 +2240,7 @@ button,
     -ms-transition-delay: 0.75s;
     transition-delay: 0.75s;
     pointer-events: none;
-    background-color: rgba(244, 244, 255, 0.2);
+    background-color: rgba(212, 212, 255, 0.1);
     content: "";
     display: block;
     height: 100%;
@@ -2810,7 +2810,7 @@ body.is-menu-visible #menu {
     padding-bottom: 1em;
     margin: 5em 0;
     min-height: 31em;
-    background-color: #272727;
+    background-color: rgba(212, 212, 255, 0.1);
     /* The Modal (background) */
     /* Modal Content/Box */
     /* The Close Button */ }
@@ -2846,8 +2846,8 @@ body.is-menu-visible #menu {
       animation-duration: 0.4s; }
     #staff .card .modal-content {
       background-color: rgba(39, 39, 39, 0.85);
-      margin: 15% auto;
-      /* 15% from the top and centered */
+      margin: 5% auto;
+      /* 5% from the top and centered */
       padding: 5em;
       border: 1px solid #888;
       width: 70%;
