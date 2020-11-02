@@ -40,12 +40,17 @@ a {
       "border-bottom-color #{_duration(transition)} ease-in-out"
     )
   );
-  color: inherit;
+
+  color: _palette(yellow1);
   text-decoration: none;
 
   &:hover {
     border-bottom-color: transparent;
     color: _palette(bg-alt) !important;
+
+    &.hover-yellow {
+      background-color: _palette(yellow1);
+    }
   }
 
   &:active {

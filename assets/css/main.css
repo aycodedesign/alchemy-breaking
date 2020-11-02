@@ -116,11 +116,13 @@ a {
   -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-  color: inherit;
+  color: #f2cb05;
   text-decoration: none; }
   a:hover {
     border-bottom-color: transparent;
     color: #272727 !important; }
+    a:hover.hover-yellow {
+      background-color: #f2cb05; }
   a:active {
     color: #010101 !important; }
 
