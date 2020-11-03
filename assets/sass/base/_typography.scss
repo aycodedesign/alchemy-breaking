@@ -25,10 +25,12 @@ textarea {
 }
 
 #menu {
-  color: _palette(bg-alt);
+  a {
+    color: _palette(bg-alt);
 
-  a:hover {
-    color: _palette(fg);
+    &:hover {
+      color: _palette(fg);
+    }
   }
 }
 
