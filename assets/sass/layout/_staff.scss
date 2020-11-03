@@ -46,7 +46,7 @@
 
   .card {
     width: 25rem;
-    background-color: _palette(bg-alt);
+    background-color: _palette(blue);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +81,7 @@
       a {
         position: relative;
         bottom: 0;
-        right: -3em;
+        right: -4em;
       }
     }
   }
@@ -234,10 +234,6 @@
   @include breakpoint("<=small") {
     @include padding(3em, 0);
     width: calc(100% - 3em);
-  }
-
-  @include breakpoint("<=xsmall") {
-    @include padding(3em, 1em);
 
     .column {
       float: left;
@@ -246,15 +242,13 @@
     }
 
     .card {
-      // box-shadow: 0 4px 8px 0 _palette(bg-alt);
       width: 100%;
       max-width: 100%;
       margin: auto;
       text-align: center;
       padding-bottom: 1em;
-      margin: 1em 0;
-      min-height: 31em;
-      background-color: _palette(bg-alt);
+      margin: 2rem;
+      // min-height: 31em;
 
       .modal-content {
         margin: 15% auto; /* 15% from the top and centered */
@@ -263,7 +257,76 @@
         width: 85%; /* Could be more or less, depending on screen size */
 
         h2 {
-          font-size: 2em;
+          font-size: 1em;
+          outline: 1px red solid;
+
+          &:hover {
+            color: _palette(fg) !important;
+          }
+        }
+
+        h3 {
+          font-size: 1.5em;
+          margin: 2em 0;
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 22px;
+          color: black;
+          padding: 0.5em 0.5em;
+        }
+      }
+      /* The Close Button */
+      .close {
+        color: _palette(fg);
+        float: right;
+        font-size: 50px;
+        font-weight: 400;
+        position: relative;
+        right: 0em;
+        top: -0.5em;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: _palette(highlight);
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @include breakpoint("<=xsmall") {
+    @include padding(3em, 1em);
+
+    h2.heading {
+      font-size: 2rem;
+    }
+
+    .column {
+      float: left;
+      padding: 1em 0;
+      margin: auto;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 100%;
+      margin: auto;
+      text-align: center;
+      padding-bottom: 1em;
+      margin: 2rem;
+      // min-height: 31em;
+
+      .modal-content {
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 1.5em;
+        border: 1px solid _palette(highlight);
+        width: 85%; /* Could be more or less, depending on screen size */
+
+        h2 {
+          font-size: 1em;
 
           &:hover {
             color: _palette(fg) !important;

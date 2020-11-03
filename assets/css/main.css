@@ -2300,8 +2300,7 @@ button,
       text-align: center;
       color: white;
       background-color: rgba(24, 24, 24, 0.1);
-      z-index: 0;
-      border: 1px solid red; }
+      z-index: 0; }
       #banner.major .banner-logo .centered {
         position: absolute;
         top: 0;
@@ -2387,7 +2386,7 @@ button,
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: fill;
       border-bottom: 0 !important;
       cursor: default;
       height: 60vh;
@@ -2480,7 +2479,7 @@ button,
             letter-spacing: 0.25em;
             text-transform: uppercase; }
       #banner.major {
-        height: 175vh; }
+        height: 165vh; }
         #banner.major .banner-logo {
           position: relative;
           text-align: center;
@@ -2516,7 +2515,7 @@ button,
               color: #ffffff;
               outline: 3px #181818 solid;
               outline-offset: -2px;
-              min-height: 65vh; }
+              min-height: 55vh; }
             #banner.major .items section.style2 {
               background-color: #ffffff;
               color: #272727;
@@ -2534,7 +2533,10 @@ button,
         -webkit-transform: translateX(-0.5em);
         -ms-transform: translateX(-0.5em);
         transform: translateX(-0.5em);
-        opacity: 0; } }
+        opacity: 0; }
+      #banner.style2 header.major,
+      #banner.style2 .content {
+        padding-left: 1rem; } }
 
 /* Main */
 #main {
@@ -2843,7 +2845,7 @@ body.is-menu-visible #menu {
     align-items: center; }
   #staff .card {
     width: 25rem;
-    background-color: #272727;
+    background-color: #021450;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2867,7 +2869,7 @@ body.is-menu-visible #menu {
       #staff .card .social a {
         position: relative;
         bottom: 0;
-        right: -3em; }
+        right: -4em; }
   #staff .profile-img {
     width: 15rem;
     height: 15rem;
@@ -2875,7 +2877,7 @@ body.is-menu-visible #menu {
     border-radius: 50%;
     margin-top: -11rem;
     z-index: 1000;
-    border: 0.5rem solid #031e77; }
+    border: 0.5rem solid #021450; }
   #staff .job-title {
     color: rgba(244, 244, 255, 0.5);
     font-size: 1rem; }
@@ -2963,10 +2965,7 @@ body.is-menu-visible #menu {
   @media screen and (max-width: 736px) {
     #staff {
       padding: 3em 0 1em 0 ;
-      width: calc(100% - 3em); } }
-  @media screen and (max-width: 480px) {
-    #staff {
-      padding: 3em 1em 1em 1em ; }
+      width: calc(100% - 3em); }
       #staff .column {
         float: left;
         padding: 1em 0;
@@ -2977,9 +2976,7 @@ body.is-menu-visible #menu {
         margin: auto;
         text-align: center;
         padding-bottom: 1em;
-        margin: 1em 0;
-        min-height: 31em;
-        background-color: #272727;
+        margin: 2rem;
         /* The Close Button */ }
         #staff .card .modal-content {
           margin: 15% auto;
@@ -2989,7 +2986,57 @@ body.is-menu-visible #menu {
           width: 85%;
           /* Could be more or less, depending on screen size */ }
           #staff .card .modal-content h2 {
-            font-size: 2em; }
+            font-size: 1em;
+            outline: 1px red solid; }
+            #staff .card .modal-content h2:hover {
+              color: #ffffff !important; }
+          #staff .card .modal-content h3 {
+            font-size: 1.5em;
+            margin: 2em 0; }
+          #staff .card .modal-content a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+            padding: 0.5em 0.5em; }
+        #staff .card .close {
+          color: #ffffff;
+          float: right;
+          font-size: 50px;
+          font-weight: 400;
+          position: relative;
+          right: 0em;
+          top: -0.5em; }
+        #staff .card .close:hover,
+        #staff .card .close:focus {
+          color: #f2e205;
+          text-decoration: none;
+          cursor: pointer; } }
+  @media screen and (max-width: 480px) {
+    #staff {
+      padding: 3em 1em 1em 1em ; }
+      #staff h2.heading {
+        font-size: 2rem; }
+      #staff .column {
+        float: left;
+        padding: 1em 0;
+        margin: auto; }
+      #staff .card {
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 1em;
+        margin: 2rem;
+        /* The Close Button */ }
+        #staff .card .modal-content {
+          margin: 15% auto;
+          /* 15% from the top and centered */
+          padding: 1.5em;
+          border: 1px solid #f2e205;
+          width: 85%;
+          /* Could be more or less, depending on screen size */ }
+          #staff .card .modal-content h2 {
+            font-size: 1em; }
             #staff .card .modal-content h2:hover {
               color: #ffffff !important; }
           #staff .card .modal-content h3 {
