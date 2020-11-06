@@ -62,17 +62,22 @@ body {
   -ms-overflow-style: scrollbar; }
 
 @media screen and (max-width: 480px) {
-  html, body {
+  html,
+  body {
     min-width: 320px; } }
 html {
   box-sizing: border-box; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit; }
 
 body {
-  background: #181818; }
-  body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+  background: #030f26; }
+  body.is-preload *,
+  body.is-preload *:before,
+  body.is-preload *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
     -ms-animation: none !important;
@@ -1716,7 +1721,7 @@ button,
     input[type="button"] .button.black,
     button .button.black,
     .button .button.black {
-      box-shadow: inset 0 0 0 2px #333333;
+      box-shadow: inset 0 0 0 2px #1c3059;
       color: #181818; }
     input[type="submit"].disabled, input[type="submit"]:disabled,
     input[type="reset"].disabled,
@@ -1831,7 +1836,7 @@ button,
     .tiles article:nth-child(6n - 3):before {
       background-color: #202020; }
     .tiles article:nth-child(6n - 2):before {
-      background-color: #0c0b0b; }
+      background-color: #0c1d40; }
   @media screen and (max-width: 1280px) {
     .tiles article {
       padding: 4em 3em 2em 3em ;
@@ -2116,9 +2121,9 @@ button,
     #header.alt.style1 .logo strong {
       color: #f6f6f6; }
     #header.alt.style2 .logo strong {
-      color: #0c0b0b; }
+      color: #0c1d40; }
     #header.alt.style3 .logo strong {
-      color: #333333; }
+      color: #1c3059; }
     #header.alt.style4 .logo strong {
       color: #202020; }
   body.is-preload #header.alt {
@@ -2326,7 +2331,7 @@ button,
           #banner.major .items section.logo img {
             max-width: 25%; }
         #banner.major .items section.style1 {
-          background-color: #0c0b0b;
+          background-color: #0c1d40;
           color: #ffffff;
           outline: 3px #181818 solid;
           outline-offset: -2px;
@@ -2511,7 +2516,7 @@ button,
               #banner.major .items section.logo img {
                 max-width: 25%; }
             #banner.major .items section.style1 {
-              background-color: #0c0b0b;
+              background-color: #0c1d40;
               color: #ffffff;
               outline: 3px #181818 solid;
               outline-offset: -2px;
@@ -2805,6 +2810,7 @@ body.is-menu-visible #menu {
 /* Staff Popup */
 #staff {
   display: inline;
+  background-color: #f2cb05;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -2845,13 +2851,13 @@ body.is-menu-visible #menu {
     align-items: center; }
   #staff .card {
     width: 25rem;
-    background-color: #021450;
+    background-color: #0c1d40;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 2rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem #333333;
+    box-shadow: 0.5rem 0.5rem 0.5rem #1c3059;
     padding-bottom: 2rem; }
     #staff .card > .card-img {
       width: 100%;
@@ -2877,7 +2883,7 @@ body.is-menu-visible #menu {
     border-radius: 50%;
     margin-top: -11rem;
     z-index: 1000;
-    border: 0.5rem solid #021450; }
+    border: 0.5rem solid #1c3059; }
   #staff .job-title {
     color: rgba(244, 244, 255, 0.5);
     font-size: 1rem; }
@@ -2950,7 +2956,7 @@ body.is-menu-visible #menu {
     margin: auto; }
   #staff .row {
     margin: auto;
-    background-color: #333333; }
+    background-color: #1c3059; }
   #staff .row:after {
     content: "";
     display: table;

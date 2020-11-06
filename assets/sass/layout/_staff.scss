@@ -3,6 +3,7 @@
 #staff {
   // padding: 0 3em 6em 3em;
   display: inline;
+  background-color: _palette(yellow1);
 
   ///////////////////////////
   margin: 0;
@@ -34,6 +35,7 @@
       border-radius: 2rem;
     }
   }
+
   .card-wrapper {
     display: flex;
     align-items: center;
@@ -46,7 +48,7 @@
 
   .card {
     width: 25rem;
-    background-color: _palette(blue);
+    background-color: _palette(accent2);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,7 +95,7 @@
     border-radius: 50%;
     margin-top: -11rem;
     z-index: 1000;
-    border: 0.5rem solid _palette(blue);
+    border: 0.5rem solid _palette(accent3);
   }
 
   .job-title {
