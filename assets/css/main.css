@@ -2809,7 +2809,6 @@ body.is-menu-visible #menu {
 /* Staff Popup */
 #staff {
   display: inline;
-  background-color: #f2cb05;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
