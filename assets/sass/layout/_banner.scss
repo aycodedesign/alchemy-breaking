@@ -180,30 +180,23 @@
         }
 
         &.style1 {
-          background-color: _palette(accent2);
+          background-color: _palette(blue3);
           color: _palette(fg);
-          outline: 3px _palette(bg) solid;
+          outline: 3px _palette(fg-light) solid;
           outline-offset: -2px;
           padding: 3em 2em;
         }
 
         &.style2 {
           background-color: _palette(fg);
-          color: _palette(bg-alt);
-          outline: 3px _palette(border-bg) solid;
+          color: _palette(blue1);
+          outline: 3px _palette(blue1) solid;
           outline-offset: -2px;
           padding: 4em 3em;
         }
       }
     }
   }
-
-  // &.style1 {
-  //   &:after {
-  //     background-color: _palette(accent1);
-  //   }
-  // }
-  // artifact
 
   body.is-preload & {
     &:after {

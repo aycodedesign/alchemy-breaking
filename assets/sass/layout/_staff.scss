@@ -48,13 +48,13 @@
 
   .card {
     width: 25rem;
-    background-color: _palette(accent2);
+    background-color: _palette(bg-alt);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 2rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem _palette(accent3);
+    box-shadow: 0.5rem 0.5rem 0.5rem _palette(border);
     padding-bottom: 2rem;
 
     > .card-img {
@@ -95,7 +95,7 @@
     border-radius: 50%;
     margin-top: -11rem;
     z-index: 1000;
-    border: 0.5rem solid _palette(accent3);
+    border: 0.5rem solid _palette(bg-alt);
   }
 
   .job-title {
