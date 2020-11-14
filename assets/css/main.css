@@ -1197,7 +1197,7 @@ input[type="radio"] {
     input[type="checkbox"] + label:before,
     input[type="radio"] + label:before {
       background: rgba(212, 212, 255, 0.035);
-      content: '';
+      content: "";
       display: inline-block;
       font-size: 0.8em;
       height: 2.0625em;
@@ -1212,7 +1212,7 @@ input[type="radio"] {
   input[type="radio"]:checked + label:before {
     background: #ffffff;
     border-color: rgba(242, 226, 5, 0.5);
-    content: '\f00c';
+    content: "\f00c";
     color: #181818; }
   input[type="checkbox"]:focus + label:before,
   input[type="radio"]:focus + label:before {
@@ -1223,19 +1223,19 @@ input[type="radio"] + label:before {
 
 ::-webkit-input-placeholder {
   color: rgba(244, 244, 255, 0.5) !important;
-  opacity: 1.0; }
+  opacity: 1; }
 
 :-moz-placeholder {
   color: rgba(244, 244, 255, 0.5) !important;
-  opacity: 1.0; }
+  opacity: 1; }
 
 ::-moz-placeholder {
   color: rgba(244, 244, 255, 0.5) !important;
-  opacity: 1.0; }
+  opacity: 1; }
 
 :-ms-input-placeholder {
   color: rgba(244, 244, 255, 0.5) !important;
-  opacity: 1.0; }
+  opacity: 1; }
 
 /* Box */
 .box {
@@ -1795,6 +1795,8 @@ button,
       top: 0;
       width: 100%;
       z-index: 4; }
+      .tiles article .link.primary:hover {
+        color: #f2cb05; }
     .tiles article:before {
       -moz-transition: opacity 0.5s ease;
       -webkit-transition: opacity 0.5s ease;
@@ -2326,13 +2328,11 @@ button,
         #banner.major .items section.style1 {
           background-color: #030f26;
           color: #ffffff;
-          outline: 3px rgba(244, 244, 255, 0.5) solid;
           outline-offset: -2px;
           padding: 3em 2em; }
         #banner.major .items section.style2 {
           background-color: #ffffff;
           color: #1c3059;
-          outline: 3px #1c3059 solid;
           outline-offset: -2px;
           padding: 4em 3em; }
   body.is-preload #banner:after {
@@ -2427,7 +2427,7 @@ button,
         -ms-transition-delay: 0.75s;
         transition-delay: 0.75s;
         pointer-events: none;
-        background-color: rgba(244, 244, 255, 0.5);
+        background-color: rgba(212, 212, 255, 0.1);
         content: "";
         display: block;
         height: 100%;
@@ -2846,7 +2846,7 @@ body.is-menu-visible #menu {
     align-items: center; }
   #staff .card {
     width: 25rem;
-    background-color: #272727;
+    background-color: #1c3059;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2867,10 +2867,6 @@ body.is-menu-visible #menu {
         color: #f2cb05; }
     #staff .card .social {
       justify-content: center; }
-      #staff .card .social a {
-        position: relative;
-        bottom: 0;
-        right: -4em; }
   #staff .profile-img {
     width: 15rem;
     height: 15rem;
@@ -3072,19 +3068,17 @@ body.is-menu-visible #menu {
 *************************/
   /* Add Animation */ }
   #schedule .s-schedule {
-    padding-top: 10rem;
-    padding-bottom: 15.6rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
     position: relative;
-    min-height: 120rem; }
+    min-height: auto; }
     #schedule .s-schedule .row {
       padding: 1em 0; }
     #schedule .s-schedule .container,
     #schedule .s-schedule .col-twelve {
       padding: 0; }
-    #schedule .s-schedule .col {
-      width: 40%; }
   @supports (display: grid) {
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 737px) {
       #schedule {
         /* a background for the sticky tracks */ }
         #schedule .schedule {
@@ -3109,8 +3103,8 @@ body.is-menu-visible #menu {
           margin: 0; } } }
   #schedule .schedule {
     grid-gap: 1em;
-    grid-template-rows: [tracks] auto [time-monday] 1fr [time-tuesday] 1fr [time-wednesday] 1fr [time-friday] 1fr [time-saturday] 1fr [time-sunday] 1fr;
-    grid-template-columns: [times] 5em [track-1-start] 1fr [track-1-end track-2-start] 1fr [track-2-end track-3-start] 1fr [track-3-end]; }
+    grid-template-rows: [tracks] auto [time-sunday] 1fr [time-monday] 1fr [time-tuesday] 1fr [time-wednesday] 1fr [time-thursday] 1fr [time-friday] 1fr;
+    grid-template-columns: [times] 5em [track-1-start] 1fr [track-1-end track-2-start] 1fr [track-2-end]; }
   #schedule .text {
     max-width: 750px;
     font-size: 18px;
@@ -3125,17 +3119,20 @@ body.is-menu-visible #menu {
   #schedule .session {
     padding: 0.5em;
     border-radius: 2px;
-    font-size: 14px; }
+    font-size: 14px;
+    margin: 1rem 0; }
   #schedule .title-1 {
     margin: 0;
     font-size: 1.25em;
     padding-bottom: 0.5em;
-    color: #18726e; }
+    color: #ffffff;
+    text-transform: uppercase; }
   #schedule .title-2 {
     margin: 0;
     font-size: 1.25em;
     padding-bottom: 0.5em;
-    color: #916920; }
+    color: #ffffff;
+    text-transform: uppercase; }
   #schedule .time-slot {
     margin: 0;
     font-size: 1.25em;
@@ -3151,17 +3148,17 @@ body.is-menu-visible #menu {
   #schedule .track-1 {
     background-color: #0c1d40;
     color: #fff;
-    outline: 5px solid #055a87;
+    outline: 3px solid #055a87;
     box-shadow: 8px 8px rgba(212, 212, 255, 0.1); }
   #schedule .track-2 {
     background-color: #0c1d40;
     color: #fff;
-    outline: 5px solid #fbd75c;
+    outline: 3px solid #fbd75c;
     box-shadow: 8px 8px rgba(212, 212, 255, 0.1); }
   #schedule .track-3 {
     background-color: #0c1d40;
     color: #fff;
-    outline: 5px solid #7da19d;
+    outline: 3px solid #469188;
     box-shadow: 8px 8px rgba(212, 212, 255, 0.1); }
   #schedule .track-many {
     display: flex;

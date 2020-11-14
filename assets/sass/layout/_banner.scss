@@ -182,7 +182,6 @@
         &.style1 {
           background-color: _palette(blue3);
           color: _palette(fg);
-          outline: 3px _palette(fg-light) solid;
           outline-offset: -2px;
           padding: 3em 2em;
         }
@@ -190,7 +189,6 @@
         &.style2 {
           background-color: _palette(fg);
           color: _palette(blue1);
-          outline: 3px _palette(blue1) solid;
           outline-offset: -2px;
           padding: 4em 3em;
         }
@@ -305,7 +303,8 @@
       @include vendor("transition", "opacity #{_duration(banner)} ease");
       @include vendor("transition-delay", "0.75s");
       @include vendor("pointer-events", "none");
-      background-color: _palette(fg-light);
+      background-color: _palette(border);
+      // this is the banner overlay
       content: "";
       display: block;
       height: 100%;

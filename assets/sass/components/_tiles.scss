@@ -64,6 +64,10 @@
       top: 0;
       width: 100%;
       z-index: 4;
+
+      &:hover {
+        color: _palette(yellow1);
+      }
     }
 
     &:before {
