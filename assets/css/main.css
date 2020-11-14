@@ -74,7 +74,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #1c3059; }
+  background: #030f26; }
   body.is-preload *,
   body.is-preload *:before,
   body.is-preload *:after {
@@ -3063,5 +3063,169 @@ body.is-menu-visible #menu {
           color: #f2e205;
           text-decoration: none;
           cursor: pointer; } }
+
+/* Class Schedule */
+#schedule {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ /*************************
+* VISUAL STYLES
+*************************/
+  /* Add Animation */ }
+  #schedule .s-schedule {
+    padding-top: 10rem;
+    padding-bottom: 15.6rem;
+    position: relative;
+    min-height: 120rem; }
+    #schedule .s-schedule .row {
+      padding: 1em 0; }
+    #schedule .s-schedule .container,
+    #schedule .s-schedule .col-twelve {
+      padding: 0; }
+    #schedule .s-schedule .col {
+      width: 40%; }
+  @supports (display: grid) {
+    @media screen and (min-width: 800px) {
+      #schedule {
+        /* a background for the sticky tracks */ }
+        #schedule .schedule {
+          display: grid; }
+        #schedule .schedule::after {
+          display: block;
+          content: "";
+          position: sticky;
+          top: 0;
+          grid-column: track-1 / -1;
+          grid-row: tracks;
+          z-index: 999;
+          background-color: rgba(255, 255, 255, 0.9); }
+        #schedule .track-slot {
+          display: block;
+          padding: 10px 5px 5px;
+          position: sticky;
+          top: 0;
+          /* otherwise seeing a gap above in at least Firefox. */
+          z-index: 1000; }
+        #schedule .session {
+          margin: 0; } } }
+  #schedule .schedule {
+    grid-gap: 1em;
+    grid-template-rows: [tracks] auto [time-monday] 1fr [time-tuesday] 1fr [time-wednesday] 1fr [time-friday] 1fr [time-saturday] 1fr [time-sunday] 1fr;
+    grid-template-columns: [times] 5em [track-1-start] 1fr [track-1-end track-2-start] 1fr [track-2-end track-3-start] 1fr [track-3-end]; }
+  #schedule .text {
+    max-width: 750px;
+    font-size: 18px;
+    margin: 0 auto 50px; }
+  #schedule .meta {
+    color: #555;
+    font-style: italic; }
+  #schedule .meta a {
+    color: #555; }
+  #schedule hr {
+    margin: 40px 0; }
+  #schedule .session {
+    padding: 0.5em;
+    border-radius: 2px;
+    font-size: 14px; }
+  #schedule .title-1 {
+    margin: 0;
+    font-size: 1.25em;
+    padding-bottom: 0.5em;
+    color: #18726e; }
+  #schedule .title-2 {
+    margin: 0;
+    font-size: 1.25em;
+    padding-bottom: 0.5em;
+    color: #916920; }
+  #schedule .time-slot {
+    margin: 0;
+    font-size: 1.25em;
+    padding: 1em 0; }
+  #schedule body {
+    counter-reset: session-count; }
+  #schedule .title::before {
+    counter-increment: session-count;
+    /* content: 'Session #'counter(session-count) ': '; */
+    /* I turned this off to prevent 'Session #' from showing up on the calendar -ay*/ }
+  #schedule span {
+    display: block; }
+  #schedule .track-1 {
+    background-color: #52d9d2;
+    color: #fff;
+    box-shadow: 1px 1px #18726e; }
+  #schedule .track-2 {
+    background-color: #f0b446;
+    color: #fff;
+    box-shadow: 1px 1px #916920; }
+  #schedule .track-many {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+    color: #000; }
+  #schedule ins {
+    text-decoration: none;
+    background-color: #ddffdd; }
+  #schedule .heading {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+    position: relative; }
+    #schedule .heading:after {
+      content: " ";
+      width: 10rem;
+      height: 0.8rem;
+      position: absolute;
+      bottom: -2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2rem; }
+  #schedule .profile-img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -11rem;
+    z-index: 1000;
+    border: 0.5rem solid #272727; }
+  #schedule .job-title {
+    color: rgba(244, 244, 255, 0.5);
+    font-size: 1rem; }
+  #schedule .about {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    text-align: center;
+    color: #333333; }
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+  @media screen and (max-width: 736px) {
+    #schedule {
+      padding: 3em 0 1em 0 ;
+      width: calc(100% - 3em); }
+      #schedule .column {
+        float: left;
+        padding: 1em 0;
+        margin: auto; } }
+  @media screen and (max-width: 480px) {
+    #schedule {
+      padding: 3em 1em 1em 1em ; }
+      #schedule h2.heading {
+        font-size: 2rem; }
+      #schedule .column {
+        float: left;
+        padding: 1em 0;
+        margin: auto; } }
 
 /*# sourceMappingURL=main.css.map */

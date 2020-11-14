@@ -1,0 +1,268 @@
+/* Class Schedule */
+
+#schedule {
+  // padding: 0 3em 6em 3em;
+  display: inline;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  // section {
+  //   padding: 10em 0;
+  // }
+
+  ///////////start schedule//////////////
+
+  .s-schedule {
+    padding-top: 10rem;
+    padding-bottom: 15.6rem;
+    // background-color: #f1f1f1;
+    position: relative;
+    min-height: 120rem;
+
+    .row {
+      padding: 1em 0;
+    }
+
+    .container,
+    .col-twelve {
+      padding: 0;
+    }
+
+    .col {
+      width: 40%;
+    }
+  }
+
+  // #s-schedule .row {
+  //   padding: 1em 0px;
+  // }
+
+  // #s-schedule .container,
+  // .col-twelve {
+  //   padding: 0;
+  // }
+
+  // #schedule .col {
+  //   width: 40%;
+  // }
+
+  @supports (display: grid) {
+    @media screen and (min-width: 800px) {
+      .schedule {
+        display: grid;
+      }
+
+      /* a background for the sticky tracks */
+      .schedule::after {
+        display: block;
+        content: "";
+        position: sticky;
+        top: 0;
+        grid-column: track-1 / -1;
+        grid-row: tracks;
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.9);
+      }
+
+      .track-slot {
+        display: block;
+        padding: 10px 5px 5px;
+        position: sticky;
+        top: 0;
+        /* otherwise seeing a gap above in at least Firefox. */
+        z-index: 1000;
+      }
+
+      .session {
+        margin: 0;
+      }
+    }
+  }
+
+  .schedule {
+    grid-gap: 1em;
+    grid-template-rows:
+      [tracks] auto [time-monday] 1fr [time-tuesday] 1fr [time-wednesday] 1fr [time-friday] 1fr [time-saturday] 1fr [time-sunday] 1fr
+      /* Note 1:
+		In this format, gridlines will need to be "named" in 24hr time
+	
+		Note 2: Use "auto" instead of "1fr" for a more compact schedule where height of a slot is not proportional to the session length. Implementing a "compact" shortcode attribute might make sense for this!
+	*/;
+
+    grid-template-columns: [times] 5em [track-1-start] 1fr [track-1-end track-2-start] 1fr [track-2-end track-3-start] 1fr [track-3-end];
+  }
+
+  /*************************
+ * VISUAL STYLES
+ *************************/
+  .text {
+    max-width: 750px;
+    font-size: 18px;
+    margin: 0 auto 50px;
+  }
+
+  .meta {
+    color: #555;
+    font-style: italic;
+  }
+
+  .meta a {
+    color: #555;
+  }
+
+  hr {
+    margin: 40px 0;
+  }
+
+  .session {
+    padding: 0.5em;
+    border-radius: 2px;
+    font-size: 14px;
+  }
+
+  .title-1 {
+    margin: 0;
+    font-size: 1.25em;
+    padding-bottom: 0.5em;
+    color: rgb(24, 114, 110);
+  }
+
+  .title-2 {
+    margin: 0;
+    font-size: 1.25em;
+    padding-bottom: 0.5em;
+    color: #916920;
+  }
+
+  .time-slot {
+    margin: 0;
+    font-size: 1.25em;
+    padding: 1em 0;
+  }
+
+  body {
+    counter-reset: session-count;
+  }
+
+  .title::before {
+    counter-increment: session-count;
+    /* content: 'Session #'counter(session-count) ': '; */
+
+    /* I turned this off to prevent 'Session #' from showing up on the calendar -ay*/
+  }
+
+  span {
+    display: block;
+  }
+
+  .track-1 {
+    background-color: #52d9d2;
+    color: #fff;
+    box-shadow: 1px 1px rgb(24, 114, 110);
+  }
+
+  .track-2 {
+    background-color: #f0b446;
+    color: #fff;
+    box-shadow: 1px 1px #916920;
+  }
+
+  .track-many {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+    color: #000;
+  }
+
+  ins {
+    text-decoration: none;
+    background-color: #ddffdd;
+  }
+
+  ///////////end schedule//////////////
+
+  .heading {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+    position: relative;
+
+    &:after {
+      content: " ";
+      width: 10rem;
+      height: 0.8rem;
+      position: absolute;
+      bottom: -2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2rem;
+    }
+  }
+
+  .profile-img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -11rem;
+    z-index: 1000;
+    border: 0.5rem solid _palette(bg-alt);
+  }
+
+  .job-title {
+    color: _palette(fg-light);
+    font-size: 1rem;
+  }
+
+  .about {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    text-align: center;
+    color: #333333;
+  }
+
+  /* Add Animation */
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  @include breakpoint("<=small") {
+    @include padding(3em, 0);
+    width: calc(100% - 3em);
+
+    .column {
+      float: left;
+      padding: 1em 0;
+      margin: auto;
+    }
+  }
+
+  @include breakpoint("<=xsmall") {
+    @include padding(3em, 1em);
+
+    h2.heading {
+      font-size: 2rem;
+    }
+
+    .column {
+      float: left;
+      padding: 1em 0;
+      margin: auto;
+    }
+  }
+}
