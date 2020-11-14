@@ -158,15 +158,24 @@
   }
 
   .track-1 {
-    background-color: #52d9d2;
+    background-color: _palette(blue2);
     color: #fff;
-    box-shadow: 1px 1px rgb(24, 114, 110);
+    outline: 5px solid _palette(s-blue);
+    box-shadow: 8px 8px _palette(border);
   }
 
   .track-2 {
-    background-color: #f0b446;
+    background-color: _palette(blue2);
     color: #fff;
-    box-shadow: 1px 1px #916920;
+    outline: 5px solid _palette(s-yellow);
+    box-shadow: 8px 8px _palette(border);
+  }
+
+  .track-3 {
+    background-color: _palette(blue2);
+    color: #fff;
+    outline: 5px solid _palette(s-green);
+    box-shadow: 8px 8px _palette(border);
   }
 
   .track-many {
