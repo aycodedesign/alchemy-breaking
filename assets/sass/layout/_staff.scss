@@ -53,8 +53,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    // margin-bottom: 7rem;
-    margin-bottom: 0;
+    margin-bottom: 7rem;
   }
 
   .card {
@@ -100,7 +99,7 @@
     border-radius: 50%;
     margin-top: -11rem;
     z-index: 1000;
-    border: 0.5rem solid _palette(bg-alt);
+    border: 0.5rem solid _palette(blue1);
   }
 
   .job-title {

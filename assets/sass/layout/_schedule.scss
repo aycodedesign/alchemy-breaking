@@ -16,7 +16,6 @@
   .s-schedule {
     padding-top: 1rem;
     padding-bottom: 5rem;
-    // background-color: #f1f1f1;
     position: relative;
     min-height: auto;
 
@@ -147,21 +146,21 @@
   }
 
   .track-1 {
-    background-color: _palette(blue2);
+    background-color: _palette(blue3-light);
     color: #fff;
     outline: 3px solid _palette(s-blue);
     box-shadow: 8px 8px _palette(border);
   }
 
   .track-2 {
-    background-color: _palette(blue2);
+    background-color: _palette(blue3-light);
     color: #fff;
     outline: 3px solid _palette(s-yellow);
     box-shadow: 8px 8px _palette(border);
   }
 
   .track-3 {
-    background-color: _palette(blue2);
+    background-color: _palette(blue3-light);
     color: #fff;
     outline: 3px solid _palette(s-green);
     box-shadow: 8px 8px _palette(border);

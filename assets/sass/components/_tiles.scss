@@ -10,10 +10,6 @@
   }
 
   article {
-    &:hover {
-      background-color: _palette(yellow1);
-    }
-
     @include vendor("align-items", "center");
     @include vendor("display", "flex");
     @include vendor(
@@ -64,10 +60,6 @@
       top: 0;
       width: 100%;
       z-index: 4;
-
-      &:hover {
-        color: _palette(yellow1);
-      }
     }
 
     &:before {
@@ -113,15 +105,17 @@
       width: 60%;
     }
 
+    //these control tile hover
+
     &:nth-child(6n - 5) {
       &:before {
-        background-color: _palette(accent4);
+        background-color: _palette(s-blue);
       }
     }
 
     &:nth-child(6n - 4) {
       &:before {
-        background-color: _palette(accent4);
+        background-color: _palette(blue1);
       }
     }
 

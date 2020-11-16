@@ -1777,8 +1777,6 @@ button,
     overflow: hidden;
     position: relative;
     width: 40%; }
-    .tiles article:hover {
-      background-color: #f2cb05; }
     .tiles article .image {
       display: none; }
     .tiles article header {
@@ -1796,8 +1794,6 @@ button,
       top: 0;
       width: 100%;
       z-index: 4; }
-      .tiles article .link.primary:hover {
-        color: #f2cb05; }
     .tiles article:before {
       -moz-transition: opacity 0.5s ease;
       -webkit-transition: opacity 0.5s ease;
@@ -1835,6 +1831,10 @@ button,
       opacity: 0; }
     .tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
       width: 60%; }
+    .tiles article:nth-child(6n - 5):before {
+      background-color: #055a87; }
+    .tiles article:nth-child(6n - 4):before {
+      background-color: #1c3059; }
     .tiles article:nth-child(6n - 2):before {
       background-color: #000000; }
   @media screen and (max-width: 1280px) {
@@ -2543,7 +2543,7 @@ button,
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  background-image: url("../../image/class-schedule.jpg");
+  background-image: url("../../image/kids.jpg");
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -2558,7 +2558,27 @@ button,
   margin-bottom: -3.25em;
   max-height: 15em;
   position: relative;
-  top: 0; }
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  perspective: 2px;
+  display: flex; }
+  #banner2.parallax::after {
+    /* Display and position the pseudo-element */
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+   /* Move the pseudo-element back away from the camera,
+  * then scale it back up to fill the viewport.
+  * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+    transform: translateZ(-1px) scale(1.5);
+    /* Force the background image to fill the whole element. */
+    background-size: 100%;
+    /* Keep the image from overlapping sibling elements. */
+    z-index: -1; }
   #banner2:after {
     -moz-transition: opacity 2.5s ease;
     -webkit-transition: opacity 2.5s ease;
@@ -2871,7 +2891,7 @@ button,
     #main > *:first-child {
       border-top: 0; }
     #main > * > .inner {
-      padding: 4em 0 2em 0 ;
+      padding: 8em 0 6em 0 ;
       margin: 0 auto;
       max-width: 65em;
       width: calc(100% - 6em); }
@@ -2976,7 +2996,7 @@ button,
   #wrapper.is-transitioning {
     opacity: 0; }
   #wrapper > * > .inner {
-    padding: 4em 0 2em 0 ;
+    padding: 8em 0 6em 0 ;
     margin: 0 auto;
     max-width: 65em;
     width: calc(100% - 6em); }
@@ -3175,7 +3195,7 @@ body.is-menu-visible #menu {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0; }
+    margin-bottom: 7rem; }
   #staff .card {
     width: 25rem;
     background-color: #1c3059;
@@ -3206,7 +3226,7 @@ body.is-menu-visible #menu {
     border-radius: 50%;
     margin-top: -11rem;
     z-index: 1000;
-    border: 0.5rem solid #272727; }
+    border: 0.5rem solid #1c3059; }
   #staff .job-title {
     color: rgba(244, 244, 255, 0.5);
     font-size: 1rem; }
@@ -3484,17 +3504,17 @@ body.is-menu-visible #menu {
   #schedule span {
     display: block; }
   #schedule .track-1 {
-    background-color: #0c1d40;
+    background-color: rgba(0, 10, 27, 0.534);
     color: #fff;
     outline: 3px solid #055a87;
     box-shadow: 8px 8px rgba(212, 212, 255, 0.1); }
   #schedule .track-2 {
-    background-color: #0c1d40;
+    background-color: rgba(0, 10, 27, 0.534);
     color: #fff;
     outline: 3px solid #fbd75c;
     box-shadow: 8px 8px rgba(212, 212, 255, 0.1); }
   #schedule .track-3 {
-    background-color: #0c1d40;
+    background-color: rgba(0, 10, 27, 0.534);
     color: #fff;
     outline: 3px solid #469188;
     box-shadow: 8px 8px rgba(212, 212, 255, 0.1); }
