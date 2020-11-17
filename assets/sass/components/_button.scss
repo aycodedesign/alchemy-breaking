@@ -33,8 +33,8 @@ button,
   white-space: nowrap;
 
   &.black {
-    box-shadow: inset 0 0 0 2px _palette(bg-alt);
-    color: _palette(bg);
+    box-shadow: inset 0 0 0 2px _palette(blue1);
+    color: _palette(blue1);
   }
 
   &:hover,

@@ -52,6 +52,7 @@
     @include breakpoint("<=xsmall") {
       @include padding(3em, 1em);
       width: calc(100% - 3em);
+      margin-bottom: 3em;
     }
   }
 }

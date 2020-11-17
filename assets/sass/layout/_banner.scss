@@ -167,21 +167,6 @@
     // min-height: 40em;
     max-height: 90vh;
 
-    .banner-logo {
-      position: relative;
-      text-align: center;
-      color: white;
-      background-color: transparentize(_palette(bg), 0.9);
-      z-index: 0;
-
-      .centered {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-      }
-    }
-
     &.alt {
       opacity: 0.75;
     }
@@ -202,13 +187,6 @@
         text-align: center;
         height: 45vh;
         width: 100%;
-
-        &.logo {
-          background-color: _palette(yellow1);
-          img {
-            max-width: 25%;
-          }
-        }
 
         &.style1 {
           background-color: _palette(blue3);
@@ -358,14 +336,14 @@
     // @include padding(4em, 0, (2em, 0, 0, 0));
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: fill;
+    background-repeat: repeat;
+    background-size: contain;
     border-bottom: 0 !important;
     cursor: default;
-    height: 60vh;
+    height: 40vh;
     margin-bottom: -3.25em;
     max-height: 32em;
-    min-height: 22em;
+    // min-height: 22em;
     position: relative;
     top: -3.25em;
 
@@ -388,6 +366,7 @@
 
     h1 {
       font-size: 3.25em;
+      top: -3.25em;
     }
 
     > .inner {
@@ -485,40 +464,9 @@
           padding: 5em 6em 3em 6em;
           // height: 45vh;
           // height: auto;
-
-          &.logo {
-            background-color: _palette(yellow1);
-            img {
-              max-width: 25%;
-            }
-          }
-
-          &.style1 {
-            background-color: _palette(accent2);
-            color: _palette(fg);
-            outline: 3px _palette(bg) solid;
-            outline-offset: -2px;
-            min-height: 55vh;
-            // min-height: 50vh;
-          }
-
-          &.style2 {
-            background-color: _palette(fg);
-            color: _palette(bg-alt);
-            outline: 3px _palette(border-bg) solid;
-            outline-offset: -2px;
-            min-height: 50vh;
-          }
         }
       }
     }
-
-    // &.style1 {
-    //   &:after {
-    //     background-color: _palette(accent1);
-    //   }
-    // }
-    // artifact
 
     body.is-preload & {
       &:after {
@@ -818,16 +766,18 @@
 
     @include vendor("display", "flex");
     // @include padding(4em, 0, (2em, 0, 0, 0));
-    background-attachment: fixed;
+    // background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: fill;
+    // background-size: contain;
     border-bottom: 0 !important;
     cursor: default;
-    height: 60vh;
+    height: auto;
     margin-bottom: -3.25em;
     max-height: 32em;
-    min-height: 22em;
+    // min-height: 22em;
     position: relative;
     top: -3.25em;
 
@@ -911,22 +861,6 @@
       // min-height: 40em;
       // max-height: 90vh;
 
-      .banner-logo {
-        position: relative;
-        text-align: center;
-        color: white;
-        background-color: transparentize(_palette(bg), 0.9);
-        z-index: 0;
-        border: 1px solid red;
-
-        .centered {
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: 1;
-        }
-      }
-
       &.alt {
         opacity: 0.75;
       }
@@ -956,7 +890,7 @@
           }
 
           &.style1 {
-            background-color: _palette(accent2);
+            background-color: _palette(blue3);
             color: _palette(fg);
             outline: 3px _palette(bg) solid;
             outline-offset: -2px;
@@ -966,7 +900,7 @@
 
           &.style2 {
             background-color: _palette(fg);
-            color: _palette(bg-alt);
+            color: _palette(blue1);
             outline: 3px _palette(border-bg) solid;
             outline-offset: -2px;
             min-height: 50vh;

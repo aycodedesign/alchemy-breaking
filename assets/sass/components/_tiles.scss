@@ -176,8 +176,26 @@
     display: block;
 
     article {
-      height: 20em;
+      // height: 20em;
+      height: auto;
       width: 100% !important;
+      background-size: fill;
+
+      //these control tile hover
+
+      &:nth-child(6n - 5) {
+        &:before {
+          background-color: _palette(bg-alt);
+          opacity: 0.75;
+        }
+      }
+
+      &:nth-child(6n - 4) {
+        &:before {
+          background-color: _palette(bg-alt);
+          opacity: 0.75;
+        }
+      }
     }
   }
 }

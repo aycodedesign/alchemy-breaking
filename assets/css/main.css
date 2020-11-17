@@ -1546,8 +1546,8 @@ button,
   input[type="button"].black,
   button.black,
   .button.black {
-    box-shadow: inset 0 0 0 2px #272727;
-    color: #181818; }
+    box-shadow: inset 0 0 0 2px #1c3059;
+    color: #1c3059; }
   input[type="submit"]:hover, input[type="submit"]:active,
   input[type="reset"]:hover,
   input[type="reset"]:active,
@@ -1858,8 +1858,15 @@ button,
     .tiles {
       display: block; }
       .tiles article {
-        height: 20em;
-        width: 100% !important; } }
+        height: auto;
+        width: 100% !important;
+        background-size: fill; }
+        .tiles article:nth-child(6n - 5):before {
+          background-color: #272727;
+          opacity: 0.75; }
+        .tiles article:nth-child(6n - 4):before {
+          background-color: #272727;
+          opacity: 0.75; } }
 
 /* Contact Method */
 .contact-method {
@@ -2316,17 +2323,6 @@ button,
   #banner.major {
     height: 90vh;
     max-height: 90vh; }
-    #banner.major .banner-logo {
-      position: relative;
-      text-align: center;
-      color: white;
-      background-color: rgba(24, 24, 24, 0.1);
-      z-index: 0; }
-      #banner.major .banner-logo .centered {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1; }
     #banner.major.alt {
       opacity: 0.75; }
     #banner.major .items {
@@ -2342,10 +2338,6 @@ button,
         text-align: center;
         height: 45vh;
         width: 100%; }
-        #banner.major .items section.logo {
-          background-color: #f2cb05; }
-          #banner.major .items section.logo img {
-            max-width: 25%; }
         #banner.major .items section.style1 {
           background-color: #030f26;
           color: #ffffff;
@@ -2418,14 +2410,13 @@ button,
       display: flex;
       background-attachment: fixed;
       background-position: center;
-      background-repeat: no-repeat;
-      background-size: fill;
+      background-repeat: repeat;
+      background-size: contain;
       border-bottom: 0 !important;
       cursor: default;
-      height: 60vh;
+      height: 40vh;
       margin-bottom: -3.25em;
       max-height: 32em;
-      min-height: 22em;
       position: relative;
       top: -3.25em; }
       #banner .overlay {
@@ -2488,7 +2479,8 @@ button,
         width: 100%;
         z-index: 1; }
       #banner h1 {
-        font-size: 3.25em; }
+        font-size: 3.25em;
+        top: -3.25em; }
       #banner > .inner {
         -moz-transition: opacity 1.5s ease, -moz-transform 0.5s ease-out, -moz-filter 0.5s ease, -webkit-filter 0.5s ease;
         -webkit-transition: opacity 1.5s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.5s ease;
@@ -2554,22 +2546,6 @@ button,
           #banner.major .items section {
             text-align: center;
             padding: 5em 6em 3em 6em; }
-            #banner.major .items section.logo {
-              background-color: #f2cb05; }
-              #banner.major .items section.logo img {
-                max-width: 25%; }
-            #banner.major .items section.style1 {
-              background-color: #000000;
-              color: #ffffff;
-              outline: 3px #181818 solid;
-              outline-offset: -2px;
-              min-height: 55vh; }
-            #banner.major .items section.style2 {
-              background-color: #ffffff;
-              color: #272727;
-              outline: 3px rgba(212, 212, 255, 0.035) solid;
-              outline-offset: -2px;
-              min-height: 50vh; }
       body.is-preload #banner:after {
         opacity: 1; }
       body.is-preload #banner > .inner {
@@ -2776,16 +2752,15 @@ button,
       display: -webkit-flex;
       display: -ms-flex;
       display: flex;
-      background-attachment: fixed;
+      background-attachment: scroll;
       background-position: center;
       background-repeat: no-repeat;
       background-size: fill;
       border-bottom: 0 !important;
       cursor: default;
-      height: 60vh;
+      height: auto;
       margin-bottom: -3.25em;
       max-height: 32em;
-      min-height: 22em;
       position: relative;
       top: -3.25em; }
       #banner2 #aba-video {
@@ -2873,18 +2848,6 @@ button,
             text-transform: uppercase; }
       #banner2.major {
         height: 165vh; }
-        #banner2.major .banner-logo {
-          position: relative;
-          text-align: center;
-          color: white;
-          background-color: rgba(24, 24, 24, 0.1);
-          z-index: 0;
-          border: 1px solid red; }
-          #banner2.major .banner-logo .centered {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1; }
         #banner2.major.alt {
           opacity: 0.75; }
         #banner2.major .items {
@@ -2904,14 +2867,14 @@ button,
               #banner2.major .items section.logo img {
                 max-width: 25%; }
             #banner2.major .items section.style1 {
-              background-color: #000000;
+              background-color: #030f26;
               color: #ffffff;
               outline: 3px #181818 solid;
               outline-offset: -2px;
               min-height: 55vh; }
             #banner2.major .items section.style2 {
               background-color: #ffffff;
-              color: #272727;
+              color: #1c3059;
               outline: 3px rgba(212, 212, 255, 0.035) solid;
               outline-offset: -2px;
               min-height: 50vh; }
@@ -2950,7 +2913,8 @@ button,
       @media screen and (max-width: 480px) {
         #main > * > .inner {
           padding: 3em 1em 1em 1em ;
-          width: calc(100% - 3em); } }
+          width: calc(100% - 3em);
+          margin-bottom: 3em; } }
   #main.alt {
     background-color: transparent;
     border-bottom: solid 1px rgba(212, 212, 255, 0.1); }
@@ -3011,6 +2975,8 @@ button,
 /* Footer */
 #footer {
   background-color: #181818; }
+  #footer .inner {
+    padding: 1rem 0 !important; }
   #footer .copyright {
     font-size: 0.8em;
     list-style: none;
@@ -3055,7 +3021,8 @@ button,
     @media screen and (max-width: 480px) {
       #wrapper > * > .inner {
         padding: 3em 1em 1em 1em ;
-        width: calc(100% - 3em); } }
+        width: calc(100% - 3em);
+        margin-bottom: 3em; } }
   @media screen and (max-width: 736px) {
     #wrapper {
       padding-top: 2.75em; } }
