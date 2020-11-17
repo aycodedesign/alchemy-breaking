@@ -493,7 +493,7 @@
   position: relative;
   top: 0;
 
-  //////////////////////////////////////
+  /////////start parallax//////////////
   overflow-x: hidden;
   overflow-y: hidden;
   perspective: 2px;
@@ -517,7 +517,7 @@
     /* Keep the image from overlapping sibling elements. */
     z-index: -1;
   }
-  //////////////////////////////////////
+  /////////end parallax//////////////
 
   &:after {
     @include vendor("transition", "opacity #{_duration(banner)} ease");
@@ -674,7 +674,7 @@
   }
 
   @include breakpoint("<=large") {
-    background-attachment: scroll;
+    background-attachment: fixed;
   }
 
   @include breakpoint("<=small") {

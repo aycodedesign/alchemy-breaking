@@ -2696,7 +2696,7 @@ button,
     opacity: 0; }
   @media screen and (max-width: 1280px) {
     #banner2 {
-      background-attachment: scroll; } }
+      background-attachment: fixed; } }
   @media screen and (max-width: 736px) {
     #banner2 {
       padding: 5em 0 1em 0 ;
