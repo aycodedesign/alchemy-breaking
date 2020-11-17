@@ -55,7 +55,7 @@ header {
   @include breakpoint("<=small") {
     &.major {
       width: 90%;
-      text-align: center;
+      text-align: left;
       > p {
         br {
           display: none;

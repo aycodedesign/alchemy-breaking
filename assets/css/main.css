@@ -1031,7 +1031,7 @@ header.major {
 @media screen and (max-width: 736px) {
   header.major {
     width: 90%;
-    text-align: center; }
+    text-align: left; }
     header.major > p br {
       display: none; } }
 
@@ -2219,6 +2219,25 @@ button,
     z-index: 0;
     display: block;
     object-fit: cover; }
+@keyframes appear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  #banner .overlay {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    width: 60%;
+    height: auto;
+    opacity: 0.75;
+    z-index: 1; }
+    #banner .overlay img {
+      position: relative;
+      width: 75%;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: 1.5s ease-in 0.5s 1 appear; }
   #banner > .split {
     padding: 0; }
     #banner > .split > * {
@@ -2362,6 +2381,20 @@ button,
       top: -2.75em; }
       #banner h1 {
         font-size: 2em; }
+      #banner .overlay {
+        position: absolute;
+        top: 90%;
+        right: 0;
+        width: 60%;
+        height: auto;
+        opacity: 0.75;
+        z-index: 1; }
+        #banner .overlay img {
+          position: relative;
+          width: 75%;
+          left: 50%;
+          transform: translateX(-50%);
+          animation: 1.5s ease-in 0.5s 1 appear; }
       #banner > .inner .content {
         display: block; }
         #banner > .inner .content > * {
@@ -2395,6 +2428,21 @@ button,
       min-height: 22em;
       position: relative;
       top: -3.25em; }
+      #banner .overlay {
+        position: absolute;
+        top: 15%;
+        right: 50%;
+        transform: translateX(50%);
+        width: 75%;
+        height: auto;
+        opacity: 0.75;
+        z-index: 1; }
+        #banner .overlay img {
+          position: relative;
+          width: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          animation: 1.5s ease-in 0.5s 1 appear; }
       #banner #aba-video {
         position: absolute;
         left: 0;
@@ -3364,7 +3412,8 @@ body.is-menu-visible #menu {
           cursor: pointer; } }
   @media screen and (max-width: 480px) {
     #staff {
-      padding: 3em 1em 1em 1em ; }
+      padding: 3em 1em 1em 1em ;
+      width: 100%; }
       #staff h2.heading {
         font-size: 2rem; }
       #staff .column {
@@ -3579,7 +3628,8 @@ body.is-menu-visible #menu {
         margin: auto; } }
   @media screen and (max-width: 480px) {
     #schedule {
-      padding: 3em 1em 1em 1em ; }
+      padding: 3em 1em 1em 1em ;
+      width: 100%; }
       #schedule h2.heading {
         font-size: 2rem; }
       #schedule .column {

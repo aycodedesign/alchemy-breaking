@@ -2,6 +2,7 @@
 
 #banner {
   /* styles the video */
+
   #aba-video {
     position: absolute;
     right: 0;
@@ -11,6 +12,33 @@
     z-index: 0;
     display: block;
     object-fit: cover;
+  }
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    width: 60%;
+    height: auto;
+    opacity: 0.75;
+    z-index: 1;
+
+    img {
+      position: relative;
+      width: 75%;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: 1.5s ease-in 0.5s 1 appear;
+    }
   }
 
   > .split {
@@ -227,6 +255,25 @@
       font-size: 2em;
     }
 
+    .overlay {
+      position: absolute;
+      top: 90%;
+      right: 0;
+      width: 60%;
+      height: auto;
+      opacity: 0.75;
+      z-index: 1;
+
+      img {
+        position: relative;
+        width: 75%;
+        // opacity: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: 1.5s ease-in 0.5s 1 appear;
+      }
+    }
+
     > .inner {
       .content {
         display: block;
@@ -247,6 +294,26 @@
 
   @include breakpoint("<=xsmall") {
     @include padding(4em, 0, (2em, 0, 0, 0));
+
+    .overlay {
+      position: absolute;
+      top: 15%;
+      right: 50%;
+      transform: translateX(50%);
+      width: 75%;
+      height: auto;
+      opacity: 0.75;
+      z-index: 1;
+
+      img {
+        position: relative;
+        width: 100%;
+        // opacity: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: 1.5s ease-in 0.5s 1 appear;
+      }
+    }
 
     /* styles the video */
     #aba-video {

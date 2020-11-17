@@ -310,6 +310,7 @@
 
   @include breakpoint("<=xsmall") {
     @include padding(3em, 1em);
+    width: 100%;
 
     h2.heading {
       font-size: 2rem;

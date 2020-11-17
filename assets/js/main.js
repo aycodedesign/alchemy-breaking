@@ -15,21 +15,12 @@
 		xsmall: ['300px', '480px']
 	});
 
-
-	// ===========================
-
-
-
-
-	// =======================
-
-
 	/**
 	 * Applies parallax scrolling to an element's background image.
 	 * @return {jQuery} jQuery object.
 	 */
 	$.fn._parallax = (browser.name == 'ie' || browser.name == 'edge' || browser.mobile) ? function () {
-		return $(this)
+		return $(this);
 	} : function (intensity) {
 
 		var $window = $(window),
