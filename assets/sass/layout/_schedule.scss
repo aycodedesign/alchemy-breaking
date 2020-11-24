@@ -11,6 +11,10 @@
   background-position: center;
   background-size: cover;
 
+  a:hover {
+    color: _palette(s-blue) !important;
+  }
+
   ///////////start schedule//////////////
 
   .s-schedule {
