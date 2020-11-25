@@ -1672,22 +1672,22 @@ input[type=radio] + label:before {
 }
 
 ::-webkit-input-placeholder {
-  color: rgba(244, 244, 255, 0.5) !important;
+  color: rgba(244, 244, 255, 0.75) !important;
   opacity: 1;
 }
 
 :-moz-placeholder {
-  color: rgba(244, 244, 255, 0.5) !important;
+  color: rgba(244, 244, 255, 0.75) !important;
   opacity: 1;
 }
 
 ::-moz-placeholder {
-  color: rgba(244, 244, 255, 0.5) !important;
+  color: rgba(244, 244, 255, 0.75) !important;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
-  color: rgba(244, 244, 255, 0.5) !important;
+  color: rgba(244, 244, 255, 0.75) !important;
   opacity: 1;
 }
 
@@ -2462,7 +2462,7 @@ button:disabled,
 }
 .contact-method h6 {
   margin-bottom: 2em;
-  color: rgba(244, 244, 255, 0.5);
+  color: rgba(244, 244, 255, 0.75);
 }
 .contact-method .icon {
   left: 0;
@@ -3802,7 +3802,7 @@ body.is-preload #banner2 > .inner {
 }
 #footer .copyright li {
   border-left: solid 1px rgba(212, 212, 255, 0.1);
-  color: rgba(244, 244, 255, 0.5);
+  color: rgba(244, 244, 255, 0.75);
   display: inline-block;
   line-height: 1;
   margin-left: 1em;
@@ -4069,19 +4069,29 @@ body.is-menu-visible #menu .inner {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 1rem;
+  margin: 2rem;
   padding-bottom: 2rem;
 }
+#staff .new-card.overlay {
+  background-color: #f2cb05;
+}
 #staff .new-card h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin: 1em 0;
-  text-align: left;
-  z-index: 10;
+  text-align: center;
+  z-index: 1;
   position: absolute;
-  bottom: 3em;
+  bottom: 30%;
 }
 #staff .new-card h3 span {
   color: #f2cb05;
+}
+#staff .new-card .job-title {
+  z-index: 1;
+  color: rgba(244, 244, 255, 0.75);
+  font-size: 1rem;
+  position: absolute;
+  bottom: 15%;
 }
 #staff .new-card h4 {
   font-size: 2rem;
@@ -4095,14 +4105,15 @@ body.is-menu-visible #menu .inner {
 }
 #staff .new-card h5 {
   font-size: 1.25rem;
-  color: rgba(244, 244, 255, 0.5);
+  color: rgba(244, 244, 255, 0.75);
 }
 #staff .new-card .new-divider {
-  background-color: #949594;
-  height: 1.5px;
+  background-color: #ffffff;
+  height: 2px;
   width: 50px;
   position: absolute;
-  top: 190px;
+  bottom: 31%;
+  z-index: 1;
 }
 #staff .new-card button {
   position: absolute;
@@ -4111,6 +4122,7 @@ body.is-menu-visible #menu .inner {
   transform: translateX(-50%);
   border: none;
   margin: 0 auto;
+  z-index: 1;
 }
 #staff .new-card .photo1 {
   height: 100%;
@@ -4122,15 +4134,67 @@ body.is-menu-visible #menu .inner {
   border-radius: 8px;
   transition: 0.5s ease-in-out;
 }
-#staff .new-card:hover .photo1, #staff .new-card:active .photo1 {
-  transform: translateY(-100px);
+#staff .new-card .photo2 {
+  height: 100%;
+  width: 100%;
+  background: url(../../../image/staff/profile-geom.jpg);
+  position: absolute;
+  bottom: 0;
   background-size: 100% 100%;
-  background-position: 0 -25%;
   border-radius: 8px;
+  transition: 0.5s ease-in-out;
+}
+#staff .new-card .photo3 {
+  height: 100%;
+  width: 100%;
+  background: url(../../../image/staff/profile-kareem.jpg);
+  position: absolute;
+  bottom: 0;
+  background-size: 100% 100%;
+  border-radius: 8px;
+  transition: 0.5s ease-in-out;
+}
+#staff .new-card .photo4 {
+  height: 100%;
+  width: 100%;
+  background: url(../../../image/staff/profile-delgado.jpg);
+  position: absolute;
+  bottom: 0;
+  background-size: 100% 100%;
+  border-radius: 8px;
+  transition: 0.5s ease-in-out;
+}
+#staff .new-card .photo5 {
+  height: 100%;
+  width: 100%;
+  background: url(../../../image/staff/profile-spee-d.jpg);
+  position: absolute;
+  bottom: 0;
+  background-size: 100% 100%;
+  border-radius: 8px;
+  transition: 0.5s ease-in-out;
+}
+#staff .new-card:hover {
+  transition: 0.25s ease-in-out;
 }
 #staff .new-card:hover h3 {
-  transition: 0.5s ease-in-out;
-  opacity: 0;
+  color: #1c3059;
+}
+#staff .new-card:hover h3 span {
+  transition: 0.25s ease-in-out;
+  color: #ffffff;
+}
+#staff .new-card:hover .job-title {
+  color: #1c3059;
+}
+#staff .new-card:hover .photo1,
+#staff .new-card:hover .photo2,
+#staff .new-card:hover .photo3,
+#staff .new-card:hover .photo4,
+#staff .new-card:hover .photo5 {
+  background-size: 103% 103%;
+  border-radius: 8px;
+  opacity: 0.25;
 }
 #staff .card-wrapper {
   display: flex;
@@ -4141,19 +4205,6 @@ body.is-menu-visible #menu .inner {
   justify-content: center;
   align-items: center;
   margin-bottom: 7rem;
-}
-#staff .profile-img {
-  width: 15rem;
-  height: 15rem;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-top: -11rem;
-  z-index: 1000;
-  border: 0.5rem solid #1c3059;
-}
-#staff .job-title {
-  color: rgba(244, 244, 255, 0.5);
-  font-size: 1rem;
 }
 #staff .about {
   font-size: 1.5rem;
@@ -4548,7 +4599,7 @@ body.is-menu-visible #menu .inner {
   border: 0.5rem solid #272727;
 }
 #schedule .job-title {
-  color: rgba(244, 244, 255, 0.5);
+  color: rgba(244, 244, 255, 0.75);
   font-size: 1rem;
 }
 #schedule .about {

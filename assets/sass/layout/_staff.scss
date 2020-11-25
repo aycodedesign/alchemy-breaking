@@ -58,20 +58,33 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
+    margin: 2rem;
     padding-bottom: 2rem;
 
+    &.overlay {
+      background-color: _palette(yellow1);
+    }
+
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       margin: 1em 0;
-      text-align: left;
-      z-index: 10;
+      text-align: center;
+      z-index: 1;
       position: absolute;
-      bottom: 3em;
+      bottom: 30%;
+      // left: 2em;
 
       span {
         color: _palette(yellow1);
       }
+    }
+
+    .job-title {
+      z-index: 1;
+      color: _palette(fg-light);
+      font-size: 1rem;
+      position: absolute;
+      bottom: 15%;
     }
 
     h4 {
@@ -91,11 +104,12 @@
     }
 
     .new-divider {
-      background-color: #949594;
-      height: 1.5px;
+      background-color: _palette(fg);
+      height: 2px;
       width: 50px;
       position: absolute;
-      top: 190px;
+      bottom: 31%;
+      z-index: 1;
     }
     button {
       position: absolute;
@@ -104,6 +118,7 @@
       transform: translateX(-50%);
       border: none;
       margin: 0 auto;
+      z-index: 1;
     }
 
     .photo1 {
@@ -117,17 +132,69 @@
       transition: 0.5s ease-in-out;
     }
 
-    &:hover .photo1,
-    &:active .photo1 {
-      transform: translateY(-100px);
+    .photo2 {
+      height: 100%;
+      width: 100%;
+      background: url(../../../image/staff/profile-geom.jpg);
+      position: absolute;
+      bottom: 0;
       background-size: 100% 100%;
-      background-position: 0 -25%;
       border-radius: 8px;
+      transition: 0.5s ease-in-out;
+    }
+    .photo3 {
+      height: 100%;
+      width: 100%;
+      background: url(../../../image/staff/profile-kareem.jpg);
+      position: absolute;
+      bottom: 0;
+      background-size: 100% 100%;
+      border-radius: 8px;
+      transition: 0.5s ease-in-out;
+    }
+    .photo4 {
+      height: 100%;
+      width: 100%;
+      background: url(../../../image/staff/profile-delgado.jpg);
+      position: absolute;
+      bottom: 0;
+      background-size: 100% 100%;
+      border-radius: 8px;
+      transition: 0.5s ease-in-out;
+    }
+    .photo5 {
+      height: 100%;
+      width: 100%;
+      background: url(../../../image/staff/profile-spee-d.jpg);
+      position: absolute;
+      bottom: 0;
+      background-size: 100% 100%;
+      border-radius: 8px;
+      transition: 0.5s ease-in-out;
     }
 
-    &:hover h3 {
-      transition: 0.5s ease-in-out;
-      opacity: 0;
+    &:hover {
+      transition: 0.25s ease-in-out;
+      h3 {
+        color: _palette(blue1);
+
+        span {
+          transition: 0.25s ease-in-out;
+          color: _palette(fg);
+        }
+      }
+      .job-title {
+        color: _palette(blue1);
+      }
+      .photo1,
+      .photo2,
+      .photo3,
+      .photo4,
+      .photo5 {
+        background-size: 103% 103%;
+        border-radius: 8px;
+        opacity: 0.25;
+      }
     }
   }
 
@@ -180,20 +247,20 @@
   //   }
   // }
 
-  .profile-img {
-    width: 15rem;
-    height: 15rem;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-top: -11rem;
-    z-index: 1000;
-    border: 0.5rem solid _palette(blue1);
-  }
+  // .profile-img {
+  //   width: 15rem;
+  //   height: 15rem;
+  //   object-fit: cover;
+  //   border-radius: 50%;
+  //   margin-top: -11rem;
+  //   z-index: 1000;
+  //   border: 0.5rem solid _palette(blue1);
+  // }
 
-  .job-title {
-    color: _palette(fg-light);
-    font-size: 1rem;
-  }
+  // .job-title {
+  //   color: _palette(fg-light);
+  //   font-size: 1rem;
+  // }
 
   .about {
     font-size: 1.5rem;
