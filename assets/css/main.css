@@ -3825,6 +3825,7 @@ body.is-preload #banner2 > .inner {
 
 /* Wrapper */
 #wrapper {
+  overflow-x: hidden;
   -moz-transition: -moz-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
   -webkit-transition: -webkit-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
   -ms-transition: -ms-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
@@ -4174,14 +4175,12 @@ body.is-menu-visible #menu .inner {
   border-radius: 8px;
   transition: 0.5s ease-in-out;
 }
-#staff .new-card:hover {
-  transition: 0.25s ease-in-out;
-}
 #staff .new-card:hover h3 {
+  transition: 0.5s ease-in-out;
   color: #1c3059;
 }
 #staff .new-card:hover h3 span {
-  transition: 0.25s ease-in-out;
+  transition: 0.5s ease-in-out;
   color: #ffffff;
 }
 #staff .new-card:hover .job-title {

@@ -1,6 +1,8 @@
 /* Wrapper */
 
 #wrapper {
+  overflow-x: hidden;
+
   @include vendor(
     "transition",
     (
