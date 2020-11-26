@@ -4058,7 +4058,7 @@ body.is-menu-visible #menu .inner {
   transform: translateX(-50%);
   border-radius: 2rem;
 }
-#staff .new-card {
+#staff .card {
   background-color: #1c3059;
   height: 450px;
   width: 310px;
@@ -4073,10 +4073,10 @@ body.is-menu-visible #menu .inner {
   margin: 2rem;
   padding-bottom: 2rem;
 }
-#staff .new-card.overlay {
+#staff .card.overlay {
   background-color: #f2cb05;
 }
-#staff .new-card h3 {
+#staff .card h3 {
   font-size: 1.25rem;
   margin: 1em 0;
   text-align: center;
@@ -4084,19 +4084,19 @@ body.is-menu-visible #menu .inner {
   position: absolute;
   bottom: 30%;
 }
-#staff .new-card h3 span {
+#staff .card h3 span {
   color: #f2cb05;
 }
-#staff .new-card .job-title {
+#staff .card .job-title {
   z-index: 1;
   color: rgba(244, 244, 255, 0.75);
   font-size: 1rem;
   position: absolute;
   bottom: 15%;
 }
-#staff .new-card h4 {
+#staff .card h4 {
   font-size: 2rem;
-  margin: 1em 0;
+  margin: 1em 0 0 0;
   text-align: center;
   z-index: 10;
   position: relative;
@@ -4104,11 +4104,12 @@ body.is-menu-visible #menu .inner {
   color: #f2cb05;
   text-align: left;
 }
-#staff .new-card h5 {
+#staff .card h5 {
   font-size: 1.25rem;
   color: rgba(244, 244, 255, 0.75);
+  margin-bottom: 2em;
 }
-#staff .new-card .new-divider {
+#staff .card .new-divider {
   background-color: #ffffff;
   height: 2px;
   width: 50px;
@@ -4116,7 +4117,7 @@ body.is-menu-visible #menu .inner {
   bottom: 31%;
   z-index: 1;
 }
-#staff .new-card button {
+#staff .card button {
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -4125,7 +4126,7 @@ body.is-menu-visible #menu .inner {
   margin: 0 auto;
   z-index: 1;
 }
-#staff .new-card .photo1 {
+#staff .card .photo1 {
   height: 100%;
   width: 100%;
   background: url(../../../image/staff/profile-atn.jpg);
@@ -4135,7 +4136,7 @@ body.is-menu-visible #menu .inner {
   border-radius: 8px;
   transition: 0.5s ease-in-out;
 }
-#staff .new-card .photo2 {
+#staff .card .photo2 {
   height: 100%;
   width: 100%;
   background: url(../../../image/staff/profile-geom.jpg);
@@ -4145,7 +4146,7 @@ body.is-menu-visible #menu .inner {
   border-radius: 8px;
   transition: 0.5s ease-in-out;
 }
-#staff .new-card .photo3 {
+#staff .card .photo3 {
   height: 100%;
   width: 100%;
   background: url(../../../image/staff/profile-kareem.jpg);
@@ -4155,7 +4156,7 @@ body.is-menu-visible #menu .inner {
   border-radius: 8px;
   transition: 0.5s ease-in-out;
 }
-#staff .new-card .photo4 {
+#staff .card .photo4 {
   height: 100%;
   width: 100%;
   background: url(../../../image/staff/profile-delgado.jpg);
@@ -4165,7 +4166,7 @@ body.is-menu-visible #menu .inner {
   border-radius: 8px;
   transition: 0.5s ease-in-out;
 }
-#staff .new-card .photo5 {
+#staff .card .photo5 {
   height: 100%;
   width: 100%;
   background: url(../../../image/staff/profile-spee-d.jpg);
@@ -4175,22 +4176,22 @@ body.is-menu-visible #menu .inner {
   border-radius: 8px;
   transition: 0.5s ease-in-out;
 }
-#staff .new-card:hover h3 {
+#staff .card:hover h3 {
   transition: 0.5s ease-in-out;
   color: #1c3059;
 }
-#staff .new-card:hover h3 span {
+#staff .card:hover h3 span {
   transition: 0.5s ease-in-out;
   color: #ffffff;
 }
-#staff .new-card:hover .job-title {
+#staff .card:hover .job-title {
   color: #1c3059;
 }
-#staff .new-card:hover .photo1,
-#staff .new-card:hover .photo2,
-#staff .new-card:hover .photo3,
-#staff .new-card:hover .photo4,
-#staff .new-card:hover .photo5 {
+#staff .card:hover .photo1,
+#staff .card:hover .photo2,
+#staff .card:hover .photo3,
+#staff .card:hover .photo4,
+#staff .card:hover .photo5 {
   background-size: 103% 103%;
   border-radius: 8px;
   opacity: 0.25;
@@ -4204,13 +4205,6 @@ body.is-menu-visible #menu .inner {
   justify-content: center;
   align-items: center;
   margin-bottom: 7rem;
-}
-#staff .about {
-  font-size: 1.5rem;
-  margin: 1.5rem 0;
-  font-style: italic;
-  text-align: center;
-  color: #333333;
 }
 #staff .modal,
 #staff .modal1,
@@ -4244,12 +4238,34 @@ body.is-menu-visible #menu .inner {
   width: 70%;
   /* Could be more or less, depending on screen size */
   text-align: left;
+  /* Clear floats after the columns */
+}
+#staff .modal-content .column1 {
+  float: left;
+  width: 50%;
+  padding: 0;
+}
+#staff .modal-content .column1 img {
+  width: 90%;
+}
+#staff .modal-content .column2 {
+  float: right;
+  width: 50%;
+  padding: 0;
+}
+#staff .modal-content .row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 #staff .modal-content h3 {
   color: #f2cb05;
   font-size: 2em;
   text-align: left;
   text-transform: uppercase;
+}
+#staff .modal-content .modal-social {
+  margin-bottom: 2em;
 }
 #staff .modal-content .modal-footer {
   padding-top: 3rem;
@@ -4310,53 +4326,141 @@ body.is-menu-visible #menu .inner {
     margin: auto;
   }
   #staff .card {
-    width: 100%;
-    max-width: 100%;
-    margin: auto;
-    text-align: center;
-    padding-bottom: 1em;
-    margin: 2rem;
-    /* The Close Button */
-  }
-  #staff .card .modal-content {
-    margin: 15% auto;
-    /* 15% from the top and centered */
-    padding: 1.5em;
-    border: 1px solid rgba(242, 226, 5, 0.5);
-    width: 85%;
-    /* Could be more or less, depending on screen size */
-  }
-  #staff .card .modal-content h2 {
-    font-size: 1em;
-    outline: 1px red solid;
-  }
-  #staff .card .modal-content h2:hover {
-    color: #ffffff !important;
-  }
-  #staff .card .modal-content h3 {
-    font-size: 1.5em;
-    margin: 2em 0;
-  }
-  #staff .card .modal-content a {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
-    padding: 0.5em 0.5em;
-  }
-  #staff .card .close {
-    color: #ffffff;
-    float: right;
-    font-size: 50px;
-    font-weight: 400;
+    background-color: #1c3059;
+    height: 450px;
+    width: 310px;
     position: relative;
-    right: 0em;
-    top: -0.5em;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 2px #272727;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    padding-bottom: 2rem;
   }
-  #staff .card .close:hover,
-#staff .card .close:focus {
-    color: rgba(242, 226, 5, 0.5);
-    text-decoration: none;
-    cursor: pointer;
+  #staff .card.overlay {
+    background-color: #f2cb05;
+  }
+  #staff .card h3 {
+    font-size: 1.25rem;
+    margin: 1em 0;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    bottom: 30%;
+  }
+  #staff .card h3 span {
+    color: #f2cb05;
+  }
+  #staff .card .job-title {
+    z-index: 1;
+    color: rgba(244, 244, 255, 0.75);
+    font-size: 1rem;
+    position: absolute;
+    bottom: 15%;
+  }
+  #staff .card h4 {
+    font-size: 2rem;
+    margin: 1em 0;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+    text-transform: uppercase;
+    color: #f2cb05;
+    text-align: left;
+  }
+  #staff .card h5 {
+    font-size: 1.25rem;
+    color: rgba(244, 244, 255, 0.75);
+  }
+  #staff .card .new-divider {
+    background-color: #ffffff;
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    bottom: 31%;
+    z-index: 1;
+  }
+  #staff .card button {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    margin: 0 auto;
+    z-index: 1;
+  }
+  #staff .card .photo1 {
+    height: 100%;
+    width: 100%;
+    background: url(../../../image/staff/profile-atn.jpg);
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 0.5s ease-in-out;
+  }
+  #staff .card .photo2 {
+    height: 100%;
+    width: 100%;
+    background: url(../../../image/staff/profile-geom.jpg);
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 0.5s ease-in-out;
+  }
+  #staff .card .photo3 {
+    height: 100%;
+    width: 100%;
+    background: url(../../../image/staff/profile-kareem.jpg);
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 0.5s ease-in-out;
+  }
+  #staff .card .photo4 {
+    height: 100%;
+    width: 100%;
+    background: url(../../../image/staff/profile-delgado.jpg);
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 0.5s ease-in-out;
+  }
+  #staff .card .photo5 {
+    height: 100%;
+    width: 100%;
+    background: url(../../../image/staff/profile-spee-d.jpg);
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 0.5s ease-in-out;
+  }
+  #staff .card:hover h3 {
+    transition: 0.5s ease-in-out;
+    color: #1c3059;
+  }
+  #staff .card:hover h3 span {
+    transition: 0.5s ease-in-out;
+    color: #ffffff;
+  }
+  #staff .card:hover .job-title {
+    color: #1c3059;
+  }
+  #staff .card:hover .photo1,
+#staff .card:hover .photo2,
+#staff .card:hover .photo3,
+#staff .card:hover .photo4,
+#staff .card:hover .photo5 {
+    background-size: 103% 103%;
+    border-radius: 8px;
+    opacity: 0.25;
   }
 }
 @media screen and (max-width: 480px) {
@@ -4373,52 +4477,141 @@ body.is-menu-visible #menu .inner {
     margin: auto;
   }
   #staff .card {
-    width: 100%;
-    max-width: 100%;
-    margin: auto;
-    text-align: center;
-    padding-bottom: 1em;
-    margin: 2rem;
-    /* The Close Button */
-  }
-  #staff .card .modal-content {
-    margin: 15% auto;
-    /* 15% from the top and centered */
-    padding: 1.5em;
-    border: 1px solid rgba(242, 226, 5, 0.5);
-    width: 85%;
-    /* Could be more or less, depending on screen size */
-  }
-  #staff .card .modal-content h2 {
-    font-size: 1em;
-  }
-  #staff .card .modal-content h2:hover {
-    color: #ffffff !important;
-  }
-  #staff .card .modal-content h3 {
-    font-size: 1.5em;
-    margin: 2em 0;
-  }
-  #staff .card .modal-content a {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
-    padding: 0.5em 0.5em;
-  }
-  #staff .card .close {
-    color: #ffffff;
-    float: right;
-    font-size: 50px;
-    font-weight: 400;
+    background-color: #1c3059;
+    height: 450px;
+    width: 310px;
     position: relative;
-    right: 0em;
-    top: -0.5em;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 2px #272727;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 1rem;
+    padding-bottom: 2rem;
   }
-  #staff .card .close:hover,
-#staff .card .close:focus {
-    color: rgba(242, 226, 5, 0.5);
-    text-decoration: none;
-    cursor: pointer;
+  #staff .card.overlay {
+    background-color: #f2cb05;
+  }
+  #staff .card h3 {
+    font-size: 1.25rem;
+    margin: 1em 0;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    bottom: 30%;
+  }
+  #staff .card h3 span {
+    color: #f2cb05;
+  }
+  #staff .card .job-title {
+    z-index: 1;
+    color: rgba(244, 244, 255, 0.75);
+    font-size: 1rem;
+    position: absolute;
+    bottom: 15%;
+  }
+  #staff .card h4 {
+    font-size: 2rem;
+    margin: 1em 0;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+    text-transform: uppercase;
+    color: #f2cb05;
+    text-align: left;
+  }
+  #staff .card h5 {
+    font-size: 1.25rem;
+    color: rgba(244, 244, 255, 0.75);
+  }
+  #staff .card .new-divider {
+    background-color: #ffffff;
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    bottom: 31%;
+    z-index: 1;
+  }
+  #staff .card button {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    margin: 0 auto;
+    z-index: 1;
+  }
+  #staff .card .photo1 {
+    height: 100%;
+    width: 100%;
+    background: url(../../../image/staff/profile-atn.jpg);
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 0.5s ease-in-out;
+  }
+  #staff .card .photo2 {
+    height: 100%;
+    width: 100%;
+    background: url(../../../image/staff/profile-geom.jpg);
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 0.5s ease-in-out;
+  }
+  #staff .card .photo3 {
+    height: 100%;
+    width: 100%;
+    background: url(../../../image/staff/profile-kareem.jpg);
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 0.5s ease-in-out;
+  }
+  #staff .card .photo4 {
+    height: 100%;
+    width: 100%;
+    background: url(../../../image/staff/profile-delgado.jpg);
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 0.5s ease-in-out;
+  }
+  #staff .card .photo5 {
+    height: 100%;
+    width: 100%;
+    background: url(../../../image/staff/profile-spee-d.jpg);
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 0.5s ease-in-out;
+  }
+  #staff .card:hover h3 {
+    transition: 0.5s ease-in-out;
+    color: #1c3059;
+  }
+  #staff .card:hover h3 span {
+    transition: 0.5s ease-in-out;
+    color: #ffffff;
+  }
+  #staff .card:hover .job-title {
+    color: #1c3059;
+  }
+  #staff .card:hover .photo1,
+#staff .card:hover .photo2,
+#staff .card:hover .photo3,
+#staff .card:hover .photo4,
+#staff .card:hover .photo5 {
+    background-size: 103% 103%;
+    border-radius: 8px;
+    opacity: 0.25;
   }
 }
 

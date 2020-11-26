@@ -46,7 +46,7 @@
 
   ///////START NEW CARD/////////////////
 
-  .new-card {
+  .card {
     background-color: _palette(blue1);
     height: 450px;
     width: 310px;
@@ -89,7 +89,7 @@
 
     h4 {
       font-size: 2rem;
-      margin: 1em 0;
+      margin: 1em 0 0 0;
       text-align: center;
       z-index: 10;
       position: relative;
@@ -101,6 +101,7 @@
     h5 {
       font-size: 1.25rem;
       color: _palette(fg-light);
+      margin-bottom: 2em;
     }
 
     .new-divider {
@@ -211,93 +212,6 @@
     margin-bottom: 7rem;
   }
 
-  // .card {
-  //   width: 25rem;
-  //   background-color: _palette(blue1);
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   justify-content: center;
-  //   margin: 2rem;
-  //   box-shadow: 0.5rem 0.5rem 0.5rem _palette(border);
-  //   padding-bottom: 2rem;
-
-  // > .card-img {
-  //   width: 100%;
-  //   height: 30rem;
-  //   object-fit: cover;
-  //   clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
-  // }
-
-  // h3 {
-  //   font-size: 1.5rem;
-  //   margin: 1em 0;
-  //   text-align: center;
-
-  //   span {
-  //     color: _palette(yellow1);
-  //   }
-  // }
-
-  //   .social {
-  //     // button {
-  //     //   margin-right: 4rem;
-  //     // }
-  //     justify-content: center;
-  //   }
-  // }
-
-  // .profile-img {
-  //   width: 15rem;
-  //   height: 15rem;
-  //   object-fit: cover;
-  //   border-radius: 50%;
-  //   margin-top: -11rem;
-  //   z-index: 1000;
-  //   border: 0.5rem solid _palette(blue1);
-  // }
-
-  // .job-title {
-  //   color: _palette(fg-light);
-  //   font-size: 1rem;
-  // }
-
-  .about {
-    font-size: 1.5rem;
-    margin: 1.5rem 0;
-    font-style: italic;
-    text-align: center;
-    color: #333333;
-  }
-
-  ///////////////////////////
-
-  // .card {
-  //   box-shadow: 0 4px 8px 0 _palette(bg-alt);
-  //   max-width: 300px;
-  //   margin: auto;
-  //   text-align: center;
-  //   padding-bottom: 1em;
-  //   margin: 5em 0;
-  //   min-height: 31em;
-  //   background-color: _palette(border);
-
-  //   h2 {
-  //     padding: 0.5em 1em 0 1em;
-  //   }
-
-  //   h3 {
-  //     font-size: 1.35em;
-  //   }
-
-  //   a {
-  //     text-decoration: none;
-  //     font-size: 22px;
-  //     color: black;
-  //     padding: 0.5em 0.5em;
-  //   }
-  // }
-
   /* The Modal (background) */
   .modal,
   .modal1,
@@ -327,11 +241,39 @@
     border: 1px solid #888;
     width: 70%; /* Could be more or less, depending on screen size */
     text-align: left;
+
+    .column1 {
+      float: left;
+      width: 50%;
+      padding: 0;
+
+      img {
+        width: 90%;
+      }
+    }
+
+    .column2 {
+      float: right;
+      width: 50%;
+      padding: 0;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
     h3 {
       color: _palette(yellow1);
       font-size: 2em;
       text-align: left;
       text-transform: uppercase;
+    }
+
+    .modal-social {
+      margin-bottom: 2em;
     }
 
     .modal-footer {
@@ -408,60 +350,161 @@
       margin: auto;
     }
 
+    ///////START NEW CARD/////////////////
+
     .card {
-      width: 100%;
-      max-width: 100%;
+      background-color: _palette(blue1);
+      height: 450px;
+      width: 310px;
+      position: relative;
       margin: auto;
-      text-align: center;
-      padding-bottom: 1em;
+      border-radius: 8px;
+      box-shadow: 0 0 5px 2px _palette(bg-alt);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       margin: 2rem;
-      // min-height: 31em;
+      padding-bottom: 2rem;
 
-      .modal-content {
-        margin: 15% auto; /* 15% from the top and centered */
-        padding: 1.5em;
-        border: 1px solid _palette(highlight);
-        width: 85%; /* Could be more or less, depending on screen size */
+      &.overlay {
+        background-color: _palette(yellow1);
+      }
 
-        h2 {
-          font-size: 1em;
-          outline: 1px red solid;
+      h3 {
+        font-size: 1.25rem;
+        margin: 1em 0;
+        text-align: center;
+        z-index: 1;
+        position: absolute;
+        bottom: 30%;
+        // left: 2em;
 
-          &:hover {
-            color: _palette(fg) !important;
+        span {
+          color: _palette(yellow1);
+        }
+      }
+
+      .job-title {
+        z-index: 1;
+        color: _palette(fg-light);
+        font-size: 1rem;
+        position: absolute;
+        bottom: 15%;
+      }
+
+      h4 {
+        font-size: 2rem;
+        margin: 1em 0;
+        text-align: center;
+        z-index: 10;
+        position: relative;
+        text-transform: uppercase;
+        color: _palette(yellow1);
+        text-align: left;
+      }
+
+      h5 {
+        font-size: 1.25rem;
+        color: _palette(fg-light);
+      }
+
+      .new-divider {
+        background-color: _palette(fg);
+        height: 2px;
+        width: 50px;
+        position: absolute;
+        bottom: 31%;
+        z-index: 1;
+      }
+      button {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: none;
+        margin: 0 auto;
+        z-index: 1;
+      }
+
+      .photo1 {
+        height: 100%;
+        width: 100%;
+        background: url(../../../image/staff/profile-atn.jpg);
+        position: absolute;
+        bottom: 0;
+        background-size: 100% 100%;
+        border-radius: 8px;
+        transition: 0.5s ease-in-out;
+      }
+
+      .photo2 {
+        height: 100%;
+        width: 100%;
+        background: url(../../../image/staff/profile-geom.jpg);
+        position: absolute;
+        bottom: 0;
+        background-size: 100% 100%;
+        border-radius: 8px;
+        transition: 0.5s ease-in-out;
+      }
+      .photo3 {
+        height: 100%;
+        width: 100%;
+        background: url(../../../image/staff/profile-kareem.jpg);
+        position: absolute;
+        bottom: 0;
+        background-size: 100% 100%;
+        border-radius: 8px;
+        transition: 0.5s ease-in-out;
+      }
+      .photo4 {
+        height: 100%;
+        width: 100%;
+        background: url(../../../image/staff/profile-delgado.jpg);
+        position: absolute;
+        bottom: 0;
+        background-size: 100% 100%;
+        border-radius: 8px;
+        transition: 0.5s ease-in-out;
+      }
+      .photo5 {
+        height: 100%;
+        width: 100%;
+        background: url(../../../image/staff/profile-spee-d.jpg);
+        position: absolute;
+        bottom: 0;
+        background-size: 100% 100%;
+        border-radius: 8px;
+        transition: 0.5s ease-in-out;
+      }
+
+      &:hover {
+        h3 {
+          transition: 0.5s ease-in-out;
+          color: _palette(blue1);
+
+          span {
+            transition: 0.5s ease-in-out;
+            color: _palette(fg);
           }
         }
-
-        h3 {
-          font-size: 1.5em;
-          margin: 2em 0;
+        .job-title {
+          color: _palette(blue1);
         }
-
-        a {
-          text-decoration: none;
-          font-size: 22px;
-          color: black;
-          padding: 0.5em 0.5em;
+        .photo1,
+        .photo2,
+        .photo3,
+        .photo4,
+        .photo5 {
+          background-size: 103% 103%;
+          border-radius: 8px;
+          opacity: 0.25;
         }
-      }
-      /* The Close Button */
-      .close {
-        color: _palette(fg);
-        float: right;
-        font-size: 50px;
-        font-weight: 400;
-        position: relative;
-        right: 0em;
-        top: -0.5em;
-      }
-
-      .close:hover,
-      .close:focus {
-        color: _palette(highlight);
-        text-decoration: none;
-        cursor: pointer;
       }
     }
+
+    ///////END NEW CARD/////////////////
   }
 
   @include breakpoint("<=xsmall") {
@@ -478,58 +521,160 @@
       margin: auto;
     }
 
+    ///////START NEW CARD/////////////////
+
     .card {
-      width: 100%;
-      max-width: 100%;
+      background-color: _palette(blue1);
+      height: 450px;
+      width: 310px;
+      position: relative;
       margin: auto;
-      text-align: center;
-      padding-bottom: 1em;
-      margin: 2rem;
-      // min-height: 31em;
+      border-radius: 8px;
+      box-shadow: 0 0 5px 2px _palette(bg-alt);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem 1rem;
+      padding-bottom: 2rem;
 
-      .modal-content {
-        margin: 15% auto; /* 15% from the top and centered */
-        padding: 1.5em;
-        border: 1px solid _palette(highlight);
-        width: 85%; /* Could be more or less, depending on screen size */
+      &.overlay {
+        background-color: _palette(yellow1);
+      }
 
-        h2 {
-          font-size: 1em;
+      h3 {
+        font-size: 1.25rem;
+        margin: 1em 0;
+        text-align: center;
+        z-index: 1;
+        position: absolute;
+        bottom: 30%;
+        // left: 2em;
 
-          &:hover {
-            color: _palette(fg) !important;
+        span {
+          color: _palette(yellow1);
+        }
+      }
+
+      .job-title {
+        z-index: 1;
+        color: _palette(fg-light);
+        font-size: 1rem;
+        position: absolute;
+        bottom: 15%;
+      }
+
+      h4 {
+        font-size: 2rem;
+        margin: 1em 0;
+        text-align: center;
+        z-index: 10;
+        position: relative;
+        text-transform: uppercase;
+        color: _palette(yellow1);
+        text-align: left;
+      }
+
+      h5 {
+        font-size: 1.25rem;
+        color: _palette(fg-light);
+      }
+
+      .new-divider {
+        background-color: _palette(fg);
+        height: 2px;
+        width: 50px;
+        position: absolute;
+        bottom: 31%;
+        z-index: 1;
+      }
+      button {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: none;
+        margin: 0 auto;
+        z-index: 1;
+      }
+
+      .photo1 {
+        height: 100%;
+        width: 100%;
+        background: url(../../../image/staff/profile-atn.jpg);
+        position: absolute;
+        bottom: 0;
+        background-size: 100% 100%;
+        border-radius: 8px;
+        transition: 0.5s ease-in-out;
+      }
+
+      .photo2 {
+        height: 100%;
+        width: 100%;
+        background: url(../../../image/staff/profile-geom.jpg);
+        position: absolute;
+        bottom: 0;
+        background-size: 100% 100%;
+        border-radius: 8px;
+        transition: 0.5s ease-in-out;
+      }
+      .photo3 {
+        height: 100%;
+        width: 100%;
+        background: url(../../../image/staff/profile-kareem.jpg);
+        position: absolute;
+        bottom: 0;
+        background-size: 100% 100%;
+        border-radius: 8px;
+        transition: 0.5s ease-in-out;
+      }
+      .photo4 {
+        height: 100%;
+        width: 100%;
+        background: url(../../../image/staff/profile-delgado.jpg);
+        position: absolute;
+        bottom: 0;
+        background-size: 100% 100%;
+        border-radius: 8px;
+        transition: 0.5s ease-in-out;
+      }
+      .photo5 {
+        height: 100%;
+        width: 100%;
+        background: url(../../../image/staff/profile-spee-d.jpg);
+        position: absolute;
+        bottom: 0;
+        background-size: 100% 100%;
+        border-radius: 8px;
+        transition: 0.5s ease-in-out;
+      }
+
+      &:hover {
+        h3 {
+          transition: 0.5s ease-in-out;
+          color: _palette(blue1);
+
+          span {
+            transition: 0.5s ease-in-out;
+            color: _palette(fg);
           }
         }
-
-        h3 {
-          font-size: 1.5em;
-          margin: 2em 0;
+        .job-title {
+          color: _palette(blue1);
         }
-
-        a {
-          text-decoration: none;
-          font-size: 22px;
-          color: black;
-          padding: 0.5em 0.5em;
+        .photo1,
+        .photo2,
+        .photo3,
+        .photo4,
+        .photo5 {
+          background-size: 103% 103%;
+          border-radius: 8px;
+          opacity: 0.25;
         }
-      }
-      /* The Close Button */
-      .close {
-        color: _palette(fg);
-        float: right;
-        font-size: 50px;
-        font-weight: 400;
-        position: relative;
-        right: 0em;
-        top: -0.5em;
-      }
-
-      .close:hover,
-      .close:focus {
-        color: _palette(highlight);
-        text-decoration: none;
-        cursor: pointer;
       }
     }
+
+    ///////END NEW CARD/////////////////
   }
 }
