@@ -4034,6 +4034,14 @@ body.is-menu-visible #menu .inner {
   /* Clear floats after the columns */
   /* Add Animation */
 }
+#staff [data-component=slideshow] .slide {
+  display: none;
+  text-align: center;
+}
+#staff [data-component=slideshow] .slide.active {
+  display: block;
+  transition: ease-in-out;
+}
 #staff section {
   padding: 10em 0;
 }

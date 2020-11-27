@@ -4,6 +4,20 @@
   // padding: 0 3em 6em 3em;
   // display: inline;
 
+  /////START modal scroll slideshow////////////
+
+  [data-component="slideshow"] .slide {
+    display: none;
+    text-align: center;
+  }
+
+  [data-component="slideshow"] .slide.active {
+    display: block;
+    transition: ease-in-out;
+  }
+
+  /////END modal scroll slideshow////////////
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
