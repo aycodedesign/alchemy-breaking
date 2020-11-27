@@ -7,6 +7,14 @@
   padding-top: 5rem;
   background-color: _palette(blue2);
 
+  img {
+    width: 15%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 4rem;
+  }
+
   > .inner {
     @include vendor("display", "flex");
     padding: 0 !important;
@@ -85,6 +93,16 @@
       > :nth-child(2n - 1) {
         @include padding(3em, 0, (0, 0, 0, 0));
       }
+    }
+  }
+
+  @include breakpoint("<=xsmall") {
+    @include padding(3em, 1em);
+    width: 100%;
+
+    img {
+      width: 50%;
+      padding-bottom: 2rem;
     }
   }
 }

@@ -2656,7 +2656,7 @@ button:disabled,
   display: inline-block;
   font-size: 0.8em;
   height: inherit;
-  max-width: 15%;
+  max-width: 20%;
   width: auto;
   line-height: inherit;
   padding: 0.5em 2em;
@@ -3727,6 +3727,13 @@ body.is-preload #banner2 > .inner {
   padding-top: 5rem;
   background-color: #0c1d40;
 }
+#contact img {
+  width: 15%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 4rem;
+}
 #contact > .inner {
   display: -moz-flex;
   display: -webkit-flex;
@@ -3785,6 +3792,16 @@ body.is-preload #banner2 > .inner {
 @media screen and (max-width: 736px) {
   #contact > .inner > :nth-child(2n-1) {
     padding: 3em 0 1em 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #contact {
+    padding: 3em 1em 1em 1em;
+    width: 100%;
+  }
+  #contact img {
+    width: 50%;
+    padding-bottom: 2rem;
   }
 }
 
@@ -4212,7 +4229,7 @@ body.is-menu-visible #menu .inner {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
 }
 #staff .modal,
 #staff .modal1,
