@@ -1,19 +1,3 @@
-<?php
-
-if($_POST["submit"]) {
-    $recipient="aycodedesign@gmail.com";
-    $subject="Alchemy Breaking Academy information";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
-
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-$thankYou="
-<p>Thank you! Your message has been sent.</p>
-"; } ?>
-
 <!DOCTYPE html>
 
 <html>
@@ -51,13 +35,15 @@ $thankYou="
     <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="theme-color" content="#f2e205" />
 
-    <link rel="stylesheet" href="assets/css/main.css"" />
+    <link rel="stylesheet" href="assets/css/main-min.css" />
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
   </head>
 
   <body class="is-preload">
+    <?=$thankYou ?>
+
     <!-- Wrapper -->
     <div id="wrapper">
       <!-- Header -->
@@ -146,15 +132,12 @@ $thankYou="
             </ul>
           </section>
           <section class="style1">
-            <h2><em>AFTER SKOOL SESSIONS</em></h2>
-            <p>An after school program presented by Alchemy Breaking Academy</p>
+            <h2><em>MEET THE STAFF</em></h2>
+            <p>Meet the founders and instructors of Alchemy Breaking Academy</p>
             <ul class="actions special">
               <li>
-                <a
-                  href="./image/after skool sessions.pdf"
-                  target="_blank"
-                  class="button next"
-                  >View Brochure</a
+                <a href="./staff.html" target="_blank" class="button next"
+                  >MEET US</a
                 >
               </li>
             </ul>
@@ -309,8 +292,6 @@ $thankYou="
         />
         <div class="inner">
           <section>
-            <?=$thankYou ?>
-
             <form method="post" action="contact.php">
               <div class="fields">
                 <div class="field half">
