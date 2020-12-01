@@ -4775,8 +4775,21 @@ body.is-menu-visible #menu .inner {
   *************************/
   /* Add Animation */
 }
+#schedule .centered {
+  display: flex;
+  justify-content: space-evenly;
+}
+#schedule p {
+  text-align: center;
+}
 #schedule a:hover {
   color: #055a87 !important;
+}
+#schedule a > button {
+  margin: 2rem auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 #schedule .s-schedule {
   padding-top: 1rem;
@@ -4972,6 +4985,9 @@ body.is-menu-visible #menu .inner {
   #schedule {
     padding: 3em 1em 1em 1em;
     width: 100%;
+  }
+  #schedule .centered {
+    display: block;
   }
   #schedule h2.heading {
     font-size: 2rem;

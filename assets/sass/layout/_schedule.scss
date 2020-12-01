@@ -11,8 +11,26 @@
   background-position: center;
   background-size: cover;
 
-  a:hover {
-    color: _palette(s-blue) !important;
+  .centered {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  a {
+    &:hover {
+      color: _palette(s-blue) !important;
+    }
+
+    > button {
+      margin: 2rem auto;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   ///////////start schedule//////////////
@@ -256,6 +274,9 @@
   @include breakpoint("<=xsmall") {
     @include padding(3em, 1em);
     width: 100%;
+    .centered {
+      display: block;
+    }
 
     h2.heading {
       font-size: 2rem;
