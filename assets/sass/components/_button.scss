@@ -32,6 +32,16 @@ button,
   text-transform: uppercase;
   white-space: nowrap;
 
+  &#click-me {
+    background-color: _palette(yellow1);
+    color: _palette(blue1);
+
+    &:hover {
+      background-color: _palette(bg-alt);
+      color: _palette(fg);
+    }
+  }
+
   &.black {
     box-shadow: inset 0 0 0 2px _palette(blue1);
     color: _palette(blue1);

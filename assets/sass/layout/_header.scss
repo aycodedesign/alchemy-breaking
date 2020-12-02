@@ -13,7 +13,7 @@
 
 #header {
   @include vendor("display", "flex");
-  background-color: _palette(yellow1);
+  background-color: _palette(trans-yellow1);
   box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
   cursor: default;
   font-weight: _font(weight-bold);
@@ -33,7 +33,7 @@
     display: inline-block;
     font-size: 0.8em;
     height: inherit;
-    max-width: 20%;
+    max-width: 15%;
     width: auto;
     line-height: inherit;
     padding: 0.5em 2em;
@@ -64,7 +64,7 @@
     line-height: inherit;
 
     a {
-      color: _palette(blue1);
+      color: _palette(bg-alt);
       border: 0;
       display: block;
       font-size: 0.8em;
