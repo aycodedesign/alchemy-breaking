@@ -287,7 +287,21 @@
     }
 
     .modal-social {
-      margin-bottom: 2em;
+      margin-bottom: 5em;
+
+      &:after {
+        content: "";
+        // border-left: 6px solid _palette(yellow1);
+        // height: 200px;
+        background-color: _palette(yellow1);
+        display: block;
+        height: 2px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 2em 0;
+        width: 50%;
+      }
     }
 
     .modal-footer {
