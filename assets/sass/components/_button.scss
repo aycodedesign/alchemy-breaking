@@ -47,6 +47,18 @@ button,
     color: _palette(blue1);
   }
 
+  &.black2 {
+    box-shadow: inset 0 0 0 2px _palette(yellow1) !important;
+    background-color: _palette(bg-alt);
+    color: _palette(fg) !important;
+
+    &:hover {
+      box-shadow: inset 0 0 0 2px _palette(bg-alt) !important;
+      background-color: _palette(fg);
+      color: _palette(bg-alt) !important;
+    }
+  }
+
   &:hover,
   &:active {
     box-shadow: inset 0 0 0 2px _palette(yellow1);
@@ -184,6 +196,11 @@ button,
       &.black {
         box-shadow: inset 0 0 0 2px _palette(accent3);
         color: _palette(bg);
+      }
+
+      &.black2 {
+        background-color: _palette(bg-alt);
+        color: _palette(yellow1) !important;
       }
     }
 
